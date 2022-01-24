@@ -20,11 +20,56 @@ body,html{
 .item{
     height: 180px;
     background-color: rgb(231, 202, 84);
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-size: 30%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+}
+
+.item .card{
+    height: 80%;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
 }
 .item:nth-child(1){
     grid-row: span 2;
     height: 375px;
+    align-items: start;
+    background-color: hsl(235, 46%, 20%);
 }
+.item:nth-child(1) .card{
+    background-color: hsl(246, 80%, 60%);
+    height: 70%;
+}
+.item:nth-child(2) {
+    background-image: url('images/icon-work.svg');
+    background-color: hsl(15, 100%, 70%);
+}
+.item:nth-child(3) {
+    background-image: url('images/icon-play.svg');
+    background-color: hsl(195, 74%, 62%);
+}
+.item:nth-child(4) {
+    background-image: url('images/icon-study.svg');
+    background-color: hsl(348, 100%, 68%);
+}
+.item:nth-child(5) {
+    background-image: url('images/icon-exercise.svg');
+    background-color: hsl(145, 58%, 55%);
+}
+.item:nth-child(6) {
+    background-image: url('images/icon-social.svg');
+    background-color: hsl(264, 64%, 52%);
+}
+.item:nth-child(7) {
+    background-image: url('images/icon-self-care.svg');
+    background-color: hsl(43, 84%, 65%);
+}
+
+
 @media screen and (max-width:800px) {
     .wrapper {
         width: 50%;
