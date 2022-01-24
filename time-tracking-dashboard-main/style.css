@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans&family=Libre+Franklin:ital,wght@0,300;0,700;1,600&family=M+PLUS+2:wght@300&family=Manrope:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700&family=Poppins:wght@400;600&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400;500&family=Spartan:wght@500;700&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+}
+.wrapper{
+    width: 65%;
+    /* height: 70%; */
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+.item{
+    height: 180px;
+    background-color: rgb(231, 202, 84);
+}
+.item:nth-child(1){
+    grid-row: span 2;
+    height: 375px;
+}
+@media screen and (max-width:800px) {
+    .wrapper {
+        width: 50%;
+        grid-template-columns: 1fr;
+    }
+    .item:nth-child(1){
+        height: 180px;
+    }
+}
