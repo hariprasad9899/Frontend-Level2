@@ -6,6 +6,7 @@ body,html{
     width: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: hsl(226, 43%, 10%);
+    color: white;
 }
 .wrapper{
     width: 65%;
@@ -33,6 +34,11 @@ body,html{
     height: 80%;
     background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
+    background-image: url("images/icon-ellipsis.svg");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 16%;
+    background-size: 10%;
 }
 .item:nth-child(1){
     grid-row: span 2;
@@ -42,8 +48,29 @@ body,html{
 }
 .item:nth-child(1) .card{
     background-color: hsl(246, 80%, 60%);
+    background-image: none;
     height: 70%;
 }
+.content{
+    padding: 10px;
+    padding-top: 0px;
+    padding-left: 20px;
+}
+.content p{
+    font-weight: 500;
+    font-size: 15px;
+}
+.wrap h2{
+    font-size: 35px;
+    font-weight: 200;
+}
+.wrap .lastweek{
+    position: relative;
+    top: -20px;
+    font-weight: 100;
+    font-size: 10px;
+}
+
 .item:nth-child(2) {
     background-image: url('images/icon-work.svg');
     background-color: hsl(15, 100%, 70%);
@@ -77,5 +104,44 @@ body,html{
     }
     .item:nth-child(1){
         height: 180px;
+    }
+    .wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        justify-content: end;
+        align-items: end;
+        align-content: end;
+    }
+    .wrap h2{
+        font-size: 30px;
+        font-weight: 200;
+    }
+    .wrap .lastweek{
+        position: relative;
+        font-weight: 100;
+        font-size: 15px;
+        grid-column: 3 /4;
+        margin: auto;
+        top: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .wrapper {
+        width: 70%;
+    }
+    .item{
+        height: 130px;
+    }
+    .item:nth-child(1){
+        height: 130px;
+    }
+    .item .card{
+        background-position-y: 20%;
+    }
+    .wrap h2{
+        font-size: 20px;
+    }
+    .wrap .lastweek{
+        font-size: 10px;
     }
 }
