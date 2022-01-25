@@ -11,6 +11,8 @@ body,html{
 main {
     height: 100%;
     width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 header {
     text-align: center;
@@ -30,6 +32,7 @@ header h3 {
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     gap: 10px;
+    box-shadow: 0px 5px 5px rgba(173, 175, 175, 0.541);
 }
 .wrapper .calc {
     background-color: white;
@@ -43,7 +46,7 @@ header h3 {
 .total {
     color: hsl(186, 14%, 43%);
 }
-.calc .total input[type='text']{
+.calc .total input[type='text'], .no input[type='text']{
     width: 90%;
     padding: 8px;
     border: none;
@@ -54,12 +57,17 @@ header h3 {
     color: hsl(183, 100%, 15%);
     font-weight: 700;
     font-size: 16px;
-    background-color: hsl(189, 41%, 97%);
-    background-image: url('images/icon-dollar.svg');
-    background-repeat: no-repeat;
+    background:hsl(189, 41%, 97%) url('images/icon-dollar.svg') no-repeat ;
     background-size: 10px;
     background-position-y: center;
     background-position-x: 3% ;
+}
+.no input[type='text']{
+    margin-top: -5px;
+    background-image:url('images/icon-person.svg') !important;
+}
+.calc .total input[type='text']:focus{
+    outline: 2px solid hsl(172, 91%, 38%);
 }
 .billlabel,.tiplabel{
     font-size: 13px;
@@ -75,15 +83,17 @@ header h3 {
     grid-template-rows: 1fr 1fr;
     gap: 5px;
 }
+.tip button, input[type='text'] {
+    border: none;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
 .tip input[type='text'] {
     width: 63px;
-    padding: 5px;
     color: hsl(183, 100%, 15%);
-    font-size: 16px;
-    color: hsl(183, 100%, 15%);
-    font-weight: 700;
     text-align: right;
-    border:none; 
     background-color:hsl(189, 41%, 97%);
 }
 ::placeholder { 
@@ -92,21 +102,17 @@ header h3 {
 }
 .tip button {
     width: 75px;
-    padding: 5px;
-    border: none;
     background-color: hsl(183, 100%, 15%);
     color: white;
-    font-size: 16px;
-    font-family: 'Space Mono', monospace;
-    font-weight: 700;
     border-radius: 2px;
 }
+
 .tip button:active{
     background-color: hsl(172, 83%, 56%);
     color: hsl(183, 100%, 15%);
 }
 .tip input[type='text']:focus{
-    outline: 1px solid hsl(172, 67%, 45%);
+    outline: 2px solid hsl(172, 91%, 38%);;
 }
 .message{
     margin-top: 20px;
@@ -114,31 +120,13 @@ header h3 {
     padding-right: 20px;
     display: flex;
     justify-content: space-between;
+    font-weight: 600;
 }
 .zero{
     color: red;
     font-weight: 700;
     display: none;
 }
-.no input[type='text']{
-    width: 90%;
-    padding: 8px;
-    border: none;
-    outline: none;
-    margin-top: -5px;
-    border-radius: 2px;
-    color: hsl(183, 100%, 15%);
-    font-weight: 700;
-    font-size: 16px;
-    text-align: right;
-    background-color: hsl(189, 41%, 97%);
-    background-image: url('images/icon-person.svg');
-    background-repeat: no-repeat;
-    background-size: 10px;
-    background-position-y: center;
-    background-position-x: 3% ;
-}
-
 .result {
     padding: 25px;
 }
@@ -146,27 +134,33 @@ header h3 {
     display: flex;
     justify-content: space-between;
 }
-.result .amount .tiptext{
-    line-height: 0.3;
+.result .amount .tiptext {
+    line-height: 1px;
+    font-size: 13px;
 }
 .result .amount .tipvalue{
-    font-size: 40px;
-    margin-top: -35px;
+    font-size: 35px;
+    margin-top: -40px;
     font-weight: 700;
     color: hsl(172, 67%, 45%);
+}
+.reset{
+    margin-top: 30%;
 }
 .reset button{
     width: 100%;
     padding: 8px;
     border: none;
     outline: none;
+    border-radius: 2px;
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
     font-weight: 700;
 }
 .result button:hover{
-    background-color: hsl(189, 41%, 97%);
+    background-color: hsl(180, 69%, 74%);
 }
+
 @media screen and (max-width:900px) {
     .wrapper{
         grid-template-columns: 1fr;
@@ -179,7 +173,7 @@ header h3 {
         column-gap: 60px;
     }
     .result .amount .tipvalue{
-        font-size: 30px;
-        margin-top: -25px;
+        font-size: 25px;
+        margin-top: -20px;
     }
 }

@@ -18,7 +18,7 @@
           <section class="total">
             <label for="total" class="billlabel">Bill</label>
             <input id="totalamount" type="text" for="total" placeholder="0" 
-            onkeypress="return /[0-9]/i.test(event.key)" autocomplete="off">
+            onkeypress="return /[0-9.]/i.test(event.key)" autocomplete="off">
           </section>
           <p class="tiplabel">Select Tip %</p>
           <section class="tip">
@@ -28,7 +28,7 @@
             <button class="per" type="submit" value="25">25%</button>
             <button class="per" type="submit" value="50">50%</button>
             <input id="custom" type="text" placeholder="Custom" 
-            onkeypress="return /[0-9]/i.test(event.key)" autocomplete="off">
+            onkeypress="return /[0-9.]/i.test(event.key)" autocomplete="off">
           </section>
           <div class="message">
             <p>Number of People</p>
@@ -36,7 +36,7 @@
           </div>
           <section class="no">
             <input type="text" id="people" placeholder="0" 
-            onkeypress="return /[0-9]/i.test(event.key)" autocomplete="off">
+            onkeypress="return /[0-9.]/i.test(event.key)" autocomplete="off">
           </section>
         </form>
       </div>
@@ -44,7 +44,7 @@
         <section class="amount">
           <div class="tiptext">
             <p style="color: white; font-weight: 500;">Tip Amount</p>
-            <p>/ person</p>
+            <p id="person">/ person</p>
           </div>
           <div class="tipvalue">
             <p>$<span id="total">0.00</span></p>
@@ -53,7 +53,7 @@
         <section class="amount">
           <div class="tiptext">
             <p style="color: white; font-weight: 500;">Total</p>
-            <p>/ person</p>
+            <p id="person">/ person</p>
           </div>
           <div class="tipvalue">
             <p>$<span id="alltotal">0.00</span></p>
