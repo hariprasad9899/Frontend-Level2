@@ -8,6 +8,59 @@
   <title>Frontend Mentor | Tip calculator app</title>
 </head>
 <body>
-  
+  <main>
+    <header>
+      <h3>SPLI<br>TTER</h3>
+    </header>
+    <div class="wrapper">
+      <div class="calc">
+        <form action="#">
+          <section class="total">
+            <label for="total" class="billlabel">Bill</label>
+            <input class="total" type="text" for="total" placeholder="0">
+          </section>
+          <p class="tiplabel">Select Tip %</p>
+          <section class="tip">
+            <button type="submit">5%</button>
+            <button type="submit">10%</button>
+            <button type="submit">15%</button>
+            <button type="submit">25%</button>
+            <button type="submit">50%</button>
+            <input type="text" placeholder="Custom">
+          </section>
+          <div class="message">
+            <p>Number of People</p>
+            <p class="zero">Can't be Zero</p>
+          </div>
+          <section class="no">
+            <input type="text" placeholder="0">
+          </section>
+        </form>
+      </div>
+      <div class="result">
+        <section class="amount">
+          <div class="tiptext">
+            <p style="color: white; font-weight: 500;">Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="tipvalue">
+            <p>$<span id="total">0.00</span></p>
+          </div>
+        </section>
+        <section class="amount">
+          <div class="tiptext">
+            <p style="color: white; font-weight: 500;">Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="tipvalue">
+            <p>$<span id="total">0.00</span></p>
+          </div>
+        </section>
+        <section class="reset">
+          <button type="submit">RESET</button>
+        </section>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

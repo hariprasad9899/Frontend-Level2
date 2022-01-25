@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400;600&family=Karla:wght@400;700&family=Kumbh+Sans&family=Libre+Franklin:ital,wght@0,300;0,700;1,600&family=M+PLUS+2:wght@300&family=Manrope:wght@500;700&family=Open+Sans&family=Outfit:wght@400;700&family=Poppins:wght@400;600&family=Roboto+Slab:wght@300&family=Rubik:wght@300;400;500&family=Spartan:wght@500;700&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+}
+main {
+    height: 100%;
+    width: 100%;
+}
+header {
+    text-align: center;
+    line-height: 1.2;
+}
+header h3 {
+    letter-spacing: 8px;
+    color: hsl(183, 100%, 15%);
+}
+.wrapper {
+    width: 50%;
+    background-color: white;
+    margin:auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 10px;
+}
+.wrapper .calc {
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.wrapper .result{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+}
+.total {
+    color: hsl(186, 14%, 43%);
+}
+.calc .total input[type='text']{
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    text-align: right;
+    margin-top: 5px;
+    border-radius: 2px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 16px;
+    background-color: hsl(189, 41%, 97%);
+    background-image: url('images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-y: center;
+    background-position-x: 3% ;
+}
+.billlabel,.tiplabel{
+    font-size: 13px;
+    color: hsl(186, 14%, 43%);
+    font-weight: 700;
+}
+.tiplabel {
+    margin-top: 20px;
+}
+.tip {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+.tip input[type='text'] {
+    width: 63px;
+    padding: 5px;
+    color: hsl(183, 100%, 15%);
+    font-size: 16px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    text-align: right;
+    border:none; 
+    background-color:hsl(189, 41%, 97%);
+}
+.tip button {
+    width: 75px;
+    padding: 5px;
+    border: none;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    border-radius: 2px;
+}
+.tip button:active{
+    background-color: hsl(172, 83%, 56%);
+    color: hsl(183, 100%, 15%);
+}
+.tip input[type='text']:focus{
+    outline: 1px solid hsl(172, 67%, 45%);
+}
+.message{
+    margin-top: 20px;
+    font-size: 12px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.zero{
+    color: red;
+    font-weight: 700;
+}
+.no input[type='text']{
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    margin-top: -5px;
+    border-radius: 2px;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 16px;
+    text-align: right;
+    background-color: hsl(189, 41%, 97%);
+    background-image: url('images/icon-person.svg');
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position-y: center;
+    background-position-x: 3% ;
+}
+
+.result {
+    padding: 25px;
+}
+.result .amount {
+    display: flex;
+    justify-content: space-between;
+}
+.result .amount .tiptext{
+    line-height: 0.3;
+}
+.result .amount .tipvalue{
+    font-size: 40px;
+    margin-top: -35px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+.reset button{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+}
+.result button:hover{
+    background-color: hsl(189, 41%, 97%);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .wrapper{
+        grid-template-columns: 1fr;
+        width: 250px;
+    }
+    .tip {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        column-gap: 60px;
+    }
+    .result .amount .tipvalue{
+        font-size: 30px;
+        margin-top: -25px;
+    }
+}
