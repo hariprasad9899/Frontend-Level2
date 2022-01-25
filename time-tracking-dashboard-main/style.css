@@ -81,7 +81,7 @@ main{
 .about{
     padding-top: 20px;
     padding-left: 20px;
-    padding-right: 10px;
+    padding-right: 25px;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -163,6 +163,7 @@ main{
     .about{
         padding-top: 10px;
         padding-left: 15px;
+        padding-right: 5px;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
