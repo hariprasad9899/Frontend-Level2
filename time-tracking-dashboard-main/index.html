@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="./data.json"></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
@@ -34,9 +35,9 @@
       <div class="card">
         <div class="content">
           <p>Work</p>
-          <div class="wrap">
-            <h2><span class="hr">32</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">36</span>hrs</p>
+          <div class="wrap" id="Work">
+            <h2><span class="chr">32</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">36</span>hrs</p>
           </div>
         </div>
       </div>
@@ -45,9 +46,9 @@
       <div class="card">
         <div class="content">
           <p>Play</p>
-          <div class="wrap">
-            <h2><span class="hr">10</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">8</span>hrs</p>
+          <div class="wrap" id="Play">
+            <h2><span class="chr">10</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">8</span>hrs</p>
           </div>
         </div>
       </div>
@@ -56,9 +57,9 @@
       <div class="card">
         <div class="content">
           <p>Study</p>
-          <div class="wrap">
-            <h2><span class="hr">4</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">7</span>hrs</p>
+          <div class="wrap" id="Study">
+            <h2><span class="chr">4</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">7</span>hrs</p>
           </div>
         </div>
       </div>
@@ -67,9 +68,9 @@
       <div class="card">
         <div class="content">
           <p>Excercise</p>
-          <div class="wrap">
-            <h2><span class="hr">4</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">5</span>hrs</p>
+          <div class="wrap" id="Excercise">
+            <h2><span class="chr">4</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">5</span>hrs</p>
           </div>
         </div>
       </div>
@@ -78,9 +79,9 @@
       <div class="card">
         <div class="content">
           <p>Social</p>
-          <div class="wrap">
-            <h2><span class="hr">5</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">12</span>hrs</p>
+          <div class="wrap" id="Social">
+            <h2><span class="chr">5</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">12</span>hrs</p>
           </div>
         </div>
       </div>
@@ -89,16 +90,14 @@
       <div class="card">
         <div class="content">
           <p>Self Care</p>
-          <div class="wrap">
-            <h2><span class="hr">2</span>hrs</h2>
-            <p class="lastweek">Last Week - <span class="lhr">2</span>hrs</p>
+          <div class="wrap" id="Self Care">
+            <h2><span class="chr">2</span>hrs</h2>
+            <p class="lastweek">Last Week - <span class="phr">2</span>hrs</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </body>
-<script>
-
-</script>
+<script src="script.js"></script>
 </html>
