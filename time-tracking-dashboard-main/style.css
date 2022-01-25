@@ -49,7 +49,23 @@ body,html{
 .item:nth-child(1) .card{
     background-color: hsl(246, 80%, 60%);
     background-image: none;
-    height: 70%;
+    height: 100%;
+}
+.item:nth-child(1) {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+.item:nth-child(1) .card{
+    grid-row: 1/2;
+}
+.item:nth-child(1) .units{
+    grid-row: 2/3;
+    height: 30%;
+}
+.units ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: -30px;
 }
 .about{
     padding-top: 20px;
@@ -59,10 +75,12 @@ body,html{
     grid-template-columns: 1fr;
 }
 .about .pic img{
-    width: 60px;
+    width: 50px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 30px;
-    /* padding-right: 5px; */
+}
+.about .name{
+    margin-top: 10px;
 }
 .about .name p{
     font-size: 12px;
@@ -132,7 +150,10 @@ body,html{
         grid-template-columns: 1fr 2fr;
     }
     .about .pic img{
-        width: 60px;
+        width: 50px;
+    }
+    .about .name{
+        margin-top: -5px;
     }
     .about .name p{
         font-size: 12px;
@@ -140,13 +161,9 @@ body,html{
     .about .name h2{
         font-size: 25px;
     }
-
     .wrap{
         display: grid;
         grid-template-columns: 1fr 1fr 2fr;
-        justify-content: end;
-        align-items: end;
-        align-content: end;
     }
     .wrap h2{
         font-size: 30px;
@@ -158,6 +175,15 @@ body,html{
         margin: auto;
         top: 0;
     }
+    .item:nth-child(1) .units ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin:5px;
+    }
+    .units {
+        margin-left: -20px;
+    }
 }
 @media screen and (max-width:500px) {
     .wrapper {
@@ -167,7 +193,7 @@ body,html{
         height: 130px;
     }
     .item:nth-child(1){
-        height: 130px;
+        height: 150px;
     }
     .item .card{
         background-position-y: 20%;
@@ -178,8 +204,11 @@ body,html{
     .wrap .lastweek{
         font-size: 10px;
     }
+    .about .name{
+        padding-left: 5px;
+    }
     .about .name p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .about .name h2{
         font-size: 20px;
