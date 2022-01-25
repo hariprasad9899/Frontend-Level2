@@ -107,54 +107,22 @@ console.log(jsonData[0]['timeframes']['daily'].current)
 
 
 var units,daily,weekly,monthly,chr,phr
-units = document.getElementsByClassName('unit');
+units = document.getElementsByClassName('period');
 chr = document.getElementsByClassName('chr');
 phr = document.getElementsByClassName('phr')
-
-// Method 1
 
 for(let i = 0; i < units.length; i++){
   let period = units[i].id;
   units[i].addEventListener('click',()=>{
-    console.log(period)
     for (let j = 0; j < chr.length; j++){
         let value_chr = jsonData[j]['timeframes'][period].current;
         let value_phr = jsonData[j]['timeframes'][period].previous;
         chr[j].innerText = value_chr;
         phr[j].innerText = value_phr;
     }
+    for(let k = 0; k < units.length; k++){
+      units[k].className = units[k].className.replace('active','');
+    }
+    units[i].className += ' active';
   })
 }
-
-// Method 2 
-
-// daily = document.getElementById('daily');
-// weekly = document.getElementById('weekly');
-// monthly = document.getElementById('monthly');
-// chr = document.getElementsByClassName('chr');
-// phr = document.getElementsByClassName('phr')
-
-// daily.addEventListener('click', () =>{
-//     for (let i = 0; i < chr.length; i++){
-//       let value_chr = jsonData[i]['timeframes'].daily.current;
-//       let value_phr = jsonData[i]['timeframes'].daily.previous;
-//       chr[i].innerText = value_chr;
-//       phr[i].innerText = value_phr;
-//     }
-// })
-// weekly.addEventListener('click', () =>{
-//   for (let i = 0; i < chr.length; i++){
-//     let value_chr = jsonData[i]['timeframes'].weekly.current;
-//     let value_phr = jsonData[i]['timeframes'].weekly.previous;
-//     chr[i].innerText = value_chr;
-//     phr[i].innerText = value_phr;
-//   }
-// })
-// monthly.addEventListener('click', () =>{
-//   for (let i = 0; i < chr.length; i++){
-//     let value_chr = jsonData[i]['timeframes'].monthly.current;
-//     let value_phr = jsonData[i]['timeframes'].monthly.previous;
-//     chr[i].innerText = value_chr;
-//     phr[i].innerText = value_phr;
-//   }
-// })
