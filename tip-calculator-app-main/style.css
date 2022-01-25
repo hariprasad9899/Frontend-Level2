@@ -86,6 +86,10 @@ header h3 {
     border:none; 
     background-color:hsl(189, 41%, 97%);
 }
+::placeholder { 
+    color: hsl(183, 100%, 15%);
+    opacity: 1;   
+}
 .tip button {
     width: 75px;
     padding: 5px;
@@ -114,6 +118,7 @@ header h3 {
 .zero{
     color: red;
     font-weight: 700;
+    display: none;
 }
 .no input[type='text']{
     width: 90%;
@@ -162,14 +167,6 @@ header h3 {
 .result button:hover{
     background-color: hsl(189, 41%, 97%);
 }
-
-
-
-
-
-
-
-
 @media screen and (max-width:900px) {
     .wrapper{
         grid-template-columns: 1fr;
