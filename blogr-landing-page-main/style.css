@@ -1,0 +1,121 @@
+body,html {
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    
+    grid-template-columns: 1fr;
+}
+.landing-page {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background:  url("images/bg-pattern-intro-desktop.svg") center no-repeat , linear-gradient(to right,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    background-size: 200%;
+    background-position-x: 30%;
+    border-bottom-left-radius: 150px;
+}
+.menu-bar {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgba(161, 122, 122, 0.534);
+    display: grid;
+    grid-template-columns: 2fr 14fr 1fr;
+}
+.title {
+    background-color: red;
+}
+.title h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif; 
+}
+.menus {
+    background-color: green;
+    position: relative;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+.options {
+    background-color: wheat;
+}
+.options .menu-list {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.menu-list li {
+    list-style-type: none;
+    margin: 5px;
+    font-size: 0.8em;
+}
+.menu-list li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+.menu-list li span img {
+    margin-left: 3px;
+    color: white;
+}
+.login {
+    background-color: whitesmoke;
+}
+.button {
+    background-color: yellow;
+}
+
+
+
+@media screen and (max-width:500px) {
+    .landing-page {
+        width: 100%;
+        height: 100vh;
+        background:  url("images/bg-pattern-intro-mobile.svg") center no-repeat , linear-gradient(to bottom,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+        background-size: 230%;
+        background-position-x: 45%;
+        background-position-y: 50%;
+    }
+    .title h2 {
+        font-size: 1em;
+    }
+    .menu-bar {
+        grid-template-columns: 6fr 1fr;
+    }
+    .button {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .menus {
+        width: 100%;
+        grid-column: 1/3;
+        position: relative;
+        height: 300px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .menus {
+        grid-template-columns: 1fr;
+    }
+    .options .menu-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-list li {
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: black;
+        font-size: 1em;
+    }
+    
+}
