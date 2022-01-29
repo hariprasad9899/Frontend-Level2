@@ -31,48 +31,75 @@ main {
     background-size: cover;
     overflow-x: hidden;
 }
-.land h3 {
-    color: white;
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.5em;
+.land ul {
+    margin-top:  10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 }
-.land .menu {
-    margin:0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    gap: 65%;
-    align-items: center;
-    padding: 20px;
+.land ul li, .land ul li a {
+    list-style-type: none;
+    text-decoration:none;
+    color: white;
+}
+.land ul .header {
+    text-align: left;
+    font-size: 30px;
+    font-weight: bolder;
+    align-self: center;
+}
+.container {
+display: none;
+cursor: pointer;
+position: relative;
+align-self: center;
 }
 
-.menus a{
-    color: white;
-    font-family: 'Barlow', sans-serif; 
-    text-decoration: none;
+.bar1, .bar2, .bar3 {
+width: 35px;
+height: 2px;
+background-color: white;
+margin: 6px 0;
+transition: 0.4s;
+
+}
+.land ul .rightmenus {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 13px;
+    font-family: 'Barlow', sans-serif;
+}
+.land ul li a {
+    position: relative;
+    padding: 10px;
     margin: 10px;
-    font-size: 0.7em;
-    font-weight:600;
+    border-radius: 50px;
+    transition: 0.2s ease;
 }
-.menus a.active {
-    padding: 15px;
-    color: black;
-    border-radius: 30px;
+.land ul li a:hover {
+    font-size: 14px;
+    background-color: rgba(233, 228, 228, 0.411);
+}
+#active {
+    color:black;
     background-color: white;
-    font-size: 0.8em;
+    font-size: 14px;
 }
-.land h1 {
+.land ul {
+    margin-bottom: 100px;
+}
+.land .centercontent {
+    margin: 0 auto;
+}
+.land .centercontent h1 {
+    position: relative;
     color: hsl(0, 0%, 100%);
     font-family: 'Fraunces', serif;
     font-weight: 700;
     font-size: 2.5em;
+    letter-spacing: 3px;
 }
-.land img {
-    position: relative;
-    margin: 0 auto;
-}
-
 .two {
     background-color: cadetblue;
     display: grid;
@@ -101,13 +128,26 @@ main {
 }
 .imgbox article a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     font-family: 'Fraunces', serif;
+}
+.imgbox article a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: -2px;
+}
+.imgbox article #yellow{
+    text-decoration-color:hsl(51, 74%, 64%);
+}
+.imgbox article #pink{
+    text-decoration-color:hsl(6, 84%, 83%);
 }
 .imgbox:nth-of-type(1) {
     background-color: hsl(0, 0%, 100%); 
 }
+
+
 .imgbox:nth-of-type(2) {
     background: url("images/desktop/image-transform.jpg") center no-repeat;
     background-size:contain;
@@ -121,76 +161,155 @@ main {
 .imgbox:nth-of-type(4) {
     background-color: hsl(0, 0%, 100%);
 }
+.imgbox:nth-of-type(5) article,.imgbox:nth-of-type(6) article {
+    width: 45%;
+    margin-top: 160px;
+    text-align: center;
+}
 .imgbox:nth-of-type(5) {
     background: url("images/desktop/image-graphic-design.jpg") center no-repeat;
     background-size:contain;
-    background-color:hsl(168, 34%, 73%);
+    background-color:hsl(167, 57%, 66%);
+    color: hsl(167, 40%, 24%);
 }
+
+.imgbox:nth-of-type(5) .imgcontent h3, .imgbox:nth-of-type(6) .imgcontent h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.imgbox:nth-of-type(5) .imgcontent p, .imgbox:nth-of-type(6) .imgcontent p {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
 .imgbox:nth-of-type(6) {
     background: url("images/desktop/image-photography.jpg") center no-repeat;
     background-size:contain;
     background-color:rgb(79, 204, 253);
+    color: hsl(198, 62%, 26%);
+}
+.imgbox:nth-of-type(5) .imgcontent p{
+    color: hsl(168, 34%, 41%);
+}
+.imgbox:nth-of-type(6) .imgcontent p{
+    color: hsl(198, 62%, 26%);
 }
 
 .three {
     width: 100%;
-    background-color: pink;
+    background-color: hsl(0, 0%, 100%);
     display: grid;
     grid-template-columns: 1fr;
+}
+.three h3 {
+    font-size: 15px;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 0.3em;
+    margin-top: 100px;
 }
 .inner {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .people {
     width: 30%;
-    height: 300px;
-    background-color: rgb(144, 136, 134);
+    height: 400px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content:space-evenly;
+    background-color: white;
+    text-align: center;
+}
+.people picture img {
+    width: 60px;
+    border-radius: 50%;
+}
+.people .text {
+    color: hsl(213, 9%, 39%);
+    font-size: 0.8em;
+}
+.people .name p:nth-child(1) {
+    font-size: 1.1em;
+    color: hsl(212, 27%, 19%);
+}
+.people .name p:nth-child(2) {
+    color: hsl(213, 9%, 39%);
+    font-size: 0.7em;
+    font-family:'Barlow', sans-serif;
 }
 .four {
     width: 100%;
-    background-color: steelblue;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .four picture {
     width: 100%;
-    height: 180px;
-    background-color: turquoise;
+    height: 350px;
 }
-.five {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-.footer {
-    width: 100%;
-    height: 300px;
-    background-color: goldenrod;
-}
-
 .four picture:nth-of-type(1){
-    background-color: rgb(163, 159, 159);
+    background: url("images/desktop/image-gallery-milkbottles.jpg") center no-repeat;
+    background-size: cover;
 }
 .four picture:nth-of-type(2){
-    background-color: rgb(184, 180, 180);
+    background: url("images/desktop/image-gallery-orange.jpg") center no-repeat;
+    background-size: cover;
 }
 .four picture:nth-of-type(3){
-    background-color: rgb(226, 216, 216);
+    background: url("images/desktop/image-gallery-cone.jpg") center no-repeat;
+    background-size: cover;
 }
 .four picture:nth-of-type(4){
-    background-color: rgb(121, 118, 118);
+    background: url("images/desktop/image-gallery-sugarcubes.jpg") center no-repeat;
+    background-size: cover;
+}
+.five {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(167, 51%, 78%);
+    text-align: center;
+}
+.five section .sunny-head {
+    color: hsl(167, 40%, 24%);
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.anchors a{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+    font-size: 0.8em;
+    font-family: 'Barlow', sans-serif;;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.icons a {
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.anchors a:hover {
+    color: white;
 }
 
-
-
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .two {
         grid-template-columns: 1fr;
     }
+    .land .centercontent {
+        margin-top: -60px;
+        font-size: 1.1em;
+    }
     .inner {
         flex-direction: column;
+    }
+    .imgbox article{
+        text-align: center;
+        width: 60%;
     }
     .people {
         margin:0;
@@ -198,5 +317,76 @@ main {
     }
     .four {
         grid-template-columns: 1fr 1fr;
+    }
+    .four picture {
+        height: 200px;
+    }
+    .imgbox:nth-of-type(5) article, .imgbox:nth-of-type(6) article {
+        width: 85%;
+    }
+    .imgbox:nth-of-type(1) {
+        grid-row: 2/3;
+    }
+    .imgbox:nth-of-type(5) {
+        background: url("images/mobile/image-graphic-design.jpg") center no-repeat;
+        background-size:cover;
+        background-color:hsl(167, 57%, 66%);
+    }
+    .imgbox:nth-of-type(6) {
+        background: url("images/mobile/image-photography.jpg") center no-repeat;
+        background-size:cover;
+        background-color:rgb(79, 204, 253);
+    }
+
+    .container {
+        display: inline-block;
+    }
+    .land ul .header {
+        font-size: 25px;
+    }
+    .land ul .rightmenus {
+        display: none;
+    }
+    .land ul .show {
+        display: block;
+    }
+    .land ul {
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    .show {
+        position: absolute;
+        z-index: 100;
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .land ul .show {
+        background-color: white;
+        font-size: 12px;
+        font-family: 'Barlow', sans-serif;
+        padding: 20px;
+    }
+    .land ul .show li a {
+        display: block;
+        width: 100px;
+        font-size: 16px;
+        color: hsl(213, 9%, 39%);
+        border-radius: 80px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .land ul li a:hover {
+        font-size: 14px;
+        background-color: rgba(233, 228, 228, 0.411);
+    }
+    #active {
+        background-color: hsl(51, 100%, 49%);
+        font-size: 18px;
+    }
+    .container {
+        left: 65%;
     }
 }

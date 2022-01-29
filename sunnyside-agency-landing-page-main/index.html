@@ -5,71 +5,144 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/52d0ff79dd.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
 <body>
   <main>
       <div class="wrapper one">
           <section class="boxes land">
-            <div class="menu">
-              <h3>sunnyside</h3>
-              <div class="menus">
-                <a href="#">About</a>
-                <a href="">Services</a>
-                <a href="">Projects</a>
-                <a href="" class="active">CONTACT</a>
+            <ul>
+              <div class="header">
+                <li><span class="head">sunnyside</span></li>
               </div>
+              <div class="container" onclick="myFunction()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class="rightmenus" id="menus">
+                <li><a href="#" class="options">About</a></li>
+                <li><a href="#" class="options">Services</a></li>
+                <li><a href="#" class="options">Projects</a></li>
+                <li><a href="#" class="options" id="active">CONTACT</a></li>
+              </div>
+            </ul>
+            <div class="centercontent">
+              <h1>WE ARE CREATIVES</h1>
+              <img src="images/icon-arrow-down.svg" height="120px" alt="">
             </div>
-            <h1>WE ARE CREATIVES</h1>
-            <img src="images/icon-arrow-down.svg" alt="">
           </section>
       </div>
       <div class="wrapper two">
         <section class="imgbox">
-          <article class="content">
+          <article>
             <h3>Transfrom your <br> brand</h3>
             <p>We are a full-service creative agency specializing 
               in helping brands grow fast. 
               Engage your clients through compelling visuals that 
               do most of the marketing for you.</p>
-            <a href="">LEARN MORE</a>
+            <a id="yellow" href="">LEARN MORE</a>
           </article>
         </section>
         <section class="imgbox"></section>
         <section class="imgbox"></section>
         <section class="imgbox">
-          <article class="content">
+          <article>
             <h3>Stand out to the right <br> audience</h3>
             <p>Using a collaborative formula of designers, researchers, 
               photographers, videographers, and copywriters, 
               we’ll build and extend your brand in digital places.</p>
-            <a href="">LEARN MORE</a>
+            <a id="pink" href="">LEARN MORE</a>
           </article>
         </section>
         <section class="imgbox">
-          <h3>Graphic design</h3>
-          <p>Great design makes you memorable. We deliver artwork that underscores 
-            your brand message and captures potential clients’ attention.</p>
+          <article class="imgcontent">
+              <h3>Graphic design</h3>
+              <p>Great design makes you memorable. We deliver artwork 
+              that underscores your brand message and captures 
+              potential clients’ attention.</p>  
+          </article>
         </section>
-        <section class="imgbox">Box 6</section>
+        <section class="imgbox">
+          <article class="imgcontent">
+            <h3>Photography</h3>
+            <p>Increase your credibility by getting the most 
+              stunning, high-quality photos that improve your 
+              business image.</p>  
+        </article>
+        </section>
       </div>
       <div class="wrapper three">
-        <h2 style="text-align: center;">Some Text</h2>
+        <h3 style="text-align: center;">CLIENT TESTIMONIALS</h3>
         <div class="inner">
-          <section class="people">People 1</section>
-          <section class="people">People 2</section>
-          <section class="people">People 3</section>
+          <section class="people">
+            <picture>
+              <img src="images/image-emily.jpg" alt="">
+            </picture>
+            <div class="text">
+              <p>We put our trust in Sunnyside and they <br> delivered, 
+                making sure our needs were met <br> and deadlines were 
+                always hit.</p>
+            </div>
+            <div class="name">
+              <p>Emily R.</p>
+              <p>Marketing Director</p>
+            </div>
+          </section>
+          <section class="people">
+            <picture>
+              <img src="images/image-thomas.jpg" alt="">
+            </picture>
+            <div class="text">
+              <p>Sunnyside’s enthusiasm coupled with their keen 
+                interest in our brand’s success made it a 
+                satisfying and enjoyable experience.</p>
+            </div>
+            <div class="name">
+              <p>Thomas S.</p>
+              <p>Chief Operating Officer</p>
+            </div>
+          </section>
+          <section class="people">
+            <picture>
+              <img src="images/image-jennie.jpg" alt="">
+            </picture>
+            <div class="text">
+              <p>Incredible end result! Our sales increased over 
+                400% when we worked with Sunnyside. Highly 
+                recommended!</p>
+            </div>
+            <div class="name">
+              <p>Jennie F.</p>
+              <p>Business Owner</p>
+            </div>
+          </section>
         </div>
       </div>
       <div class="wrapper four">
-        <picture class="sunny">picture 1</picture>
-        <picture class="sunny">picture 2</picture>
-        <picture class="sunny">picture 3</picture>
-        <picture class="sunny">picture 4</picture>
+        <picture class="sunny"></picture>
+        <picture class="sunny"></picture>
+        <picture class="sunny"></picture>
+        <picture class="sunny"></picture>
       </div>
       <div class="wrapper five">
-        <section class="footer">Footer</section>
+        <section class="sunny">
+          <div class="sunny-head">sunnyside</div>
+        </section>
+        <section class="anchors">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </section>
+        <sections class="icons anchors">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-pinterest-square"></i></a>
+        </sections>
       </div>
   </main>
 </body>
+<script src="script.js"></script>
 </html>
