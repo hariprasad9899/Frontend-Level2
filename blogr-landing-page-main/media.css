@@ -1,0 +1,93 @@
+@media screen and (max-width:540px) {
+    .landing-page {
+        width: 100%;
+        height: 100vh;
+        background:  url("images/bg-pattern-intro-mobile.svg") center no-repeat , linear-gradient(to bottom,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+        background-size: 230%;
+        background-position-x: 45%;
+        background-position-y: 50%;
+    }
+    .title h2 {
+        font-size: 1.1em;
+    }
+    .menus, .log-options {
+        display: none;
+    }
+    .menu-bar {
+        grid-template-columns: 1fr 1fr;  
+    }
+    .menu-btn {
+        display: block;     
+    }
+    .login {
+        justify-content: flex-end;
+    }
+    .mob-menu-show {
+        display: table;
+    }
+    .platform section h1 {
+        font-size: 2em;
+    }
+    .platform section p {
+        font-size: 0.7em;
+    }
+    .design {
+        background: none;
+    }
+    .briefs {
+        width: 100%;
+    }
+    .briefs .content {
+        width: 100%;
+    }
+    .briefs .one {
+        display: block;
+    }
+    .briefs .content section {
+        text-align: center;
+        padding: 30px;
+    }
+    .state {
+        height: 100%;
+        flex-direction: column;
+        background-position:50% -250px;
+        background-size: 120% 120%;
+    }
+    .state .img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .state .con {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .state .con section {
+        padding-right: 0%;
+        padding:10%;
+    }
+    .state .img img {
+        margin-top: -70px;
+        margin-left: 0px;
+    }
+    .sample {
+        margin-top: 100px;
+        margin-bottom: 40%;
+        background:none
+    }
+    footer {
+        height: 120%;
+    }
+    footer .wrapper {
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .wrapper .last {
+        width: 80%;
+        text-align: center;
+    }
+
+}
