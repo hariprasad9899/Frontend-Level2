@@ -238,7 +238,7 @@ main {
 }
 .design {
     width: 100%;
-    height: 700px;
+    min-height: 700px;
     text-align: center;
     margin: auto;
     margin-top: 50px;
