@@ -8,34 +8,43 @@ body,html {
     height: 100%;
     padding: 0;
     margin: 0;
+    background: white url("../images/bg-header-desktop.png") top no-repeat;
+    background-size: cover;
 }
 main {
     width: 100%;
-    height: 100vh;
     text-align: center;
+    position: relative;
     display: inline-block;
-    background: #eee url("../images/bg-header-desktop.png") top no-repeat;
+    
 }
 .landing-page {
-    width: 500px;
-    height: 100vh;
+    width: 50%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
     /* background-color: red; */
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 30px;
 }
 .logo img {
     width: 90px;
-    margin-top: 5%;
+    margin-top: 15%;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 .buttons button {
-    width: 30%;
+    min-width: 20%;
     border: none;
     outline: none;
-    padding: 10px;
-    border-radius: 17px;
+    padding: 12px;
+    border-radius: 20px;
     color: white;
+    align-items: center;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.246);
 }
 .buttons button:nth-child(1) {
@@ -44,16 +53,194 @@ main {
 .buttons button:nth-child(2) {
     background-color: hsl(233, 100%, 69%);
 }
-header h2 {
-    font-weight: 700;
-    font-size: 2em;
+header h1 {
+    font-weight: 900;
+    font-size: 2.5em;
+    color: hsl(210, 10%, 33%);
+}
+.feature {
+    margin-top: 5%;
 }
 .feature h3 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: 700;
+    color: hsl(210, 10%, 33%);
 }
 header p, .feature p {
-    font-size: 0.8em;
-    color: hsl(210, 10%, 33%);
+    font-size: 0.9em;
+    color: hsl(201, 11%, 66%);
     font-weight: 500;
+    margin-top: -10px;
+}
+.container-two {
+    width: 100%;
+    height: 100vh;
+    margin-top: 5%;
+}
+.services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.monitor-img {
+    width: 55%;
+}
+.monitor-img img {
+    width: 90%;
+}
+.functions {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.functions section{
+    padding-right: 20%;
+    margin-left: 40px;
+}
+.container-three {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.container-three section {
+    height: 30%;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
+.container-three section h1 {
+    font-size: 1.9em;
+}
+.container-three section h1, .functions section h3 {
+    color: hsl(210, 10%, 33%);
+
+}
+.container-three section p , .functions section p {
+    color:  hsl(201, 11%, 66%);
+}
+.img-container {
+    height: 70%;
+    display: flex;
+    margin-top: 5%;
+}
+.img-container img {
+    width: 60%;
+    margin:auto;
+}
+.container-four {
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.super {
+    text-align: center;
+}
+.support {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.support section {
+    width: 25%;
+    text-align: center;
+}
+.support section h3, .super h1 {
+    color: hsl(210, 10%, 33%);
+}
+.support section p , .super  p {
+    color:  hsl(201, 11%, 66%);
+}
+.support section p {
+    font-size: 0.9em;
+}
+.company {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container-five {
+    width: 100%;
+    margin-top: 10%;
+}
+.container-five header {
+    text-align: center;
+    margin-bottom: 5%;
+}
+.container-five header h2 {
+    color: hsl(210, 10%, 33%);
+    font-size: 2.4em;
+}
+.container-five header p {
+    color:  hsl(201, 11%, 66%);
+    font-size: 1.1em;
+}
+.container-five .buttons .last-btn {
+    width: 15%;
+    padding: 12px;
+}
+.container-six {
+    width: 100%;
+    min-height: 120px;
+    margin-top: 10%;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+}
+.ftr-logo {
+    width: 20%;
+    display: grid;
+}
+.ftr-logo img {
+    width: 30%;
+    margin: auto;
+}
+.navigations {
+    width: 50%;
+    display: flex;
+}
+.options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.options a {
+    margin: 5px;
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+.options a:hover {
+    color: hsl(171, 66%, 44%);
+    font-weight: 400;
+}
+.social {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.social picture {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    display: grid;
+}
+.social picture img {
+    margin: auto;
+}
+.social picture img:hover {
+    color: aqua;
+}
+button:hover {
+    opacity: 0.7;
 }
