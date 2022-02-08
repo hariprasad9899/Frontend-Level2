@@ -38,6 +38,7 @@ main {
     gap: 10px;
 }
 .buttons button {
+    width: 35%;
     min-width: 20%;
     border: none;
     outline: none;
