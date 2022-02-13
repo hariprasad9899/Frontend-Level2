@@ -1,0 +1,31 @@
+@media screen and (max-width:600px) {
+    .top-menu {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    body {
+        background-image: url("../images/image-hero-mobile.jpg");
+    }
+    .options {
+        display: none;
+    }
+    .menu-btn {
+        width: 50%;
+        display: flex;
+        padding-right: 30px;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .menu-btn .btn-box img {
+        width: 20px;
+        height: 18px;
+        margin-top: 8px;
+    }
+    .title h2 {
+        font-size: 1.9em;
+    }
+    .menu-show {
+        display: block;
+    }
+}
