@@ -2,6 +2,9 @@
     .top-menu {
         width: 100%;
     }
+    .content-card {
+        width: 90%;
+    }
 }
 @media screen and (max-width:500px) {
     body {
@@ -28,4 +31,17 @@
     .menu-show {
         display: block;
     }
+    .bookmark {
+        justify-content: center;
+    }
+    .bookmark button {
+        width: 70%;
+    }
+    .bookmark button:nth-child(2) {
+        display: none;
+    }
+    .bookmark img {
+        display: block;
+    }
+
 }

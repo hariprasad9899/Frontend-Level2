@@ -116,3 +116,55 @@
   <!-- Success modal end -->
 </body>
 </html>
+
+
+
+
+
+.bookmark {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.bookmark .bookmark-btn, .bookmark .bookmark-indicator {
+    width: 50%;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.bookmark button {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    background-color: var(--moderate-cyan);
+    border-radius: 25px;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    /* box-sizing: content-box; */
+    font-family: 'Commissioner', sans-serif;
+}
+.bookmark .bookmark-indicator button{
+    background-color:rgb(233, 233, 233);
+    color: var(--dark-gray);
+    font-weight: 700;
+    width: 60%;
+    position: relative;
+    text-align: right;
+}
+.bookmark .bookmark-indicator button::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: url("../images/icon-bookmark.svg") no-repeat center;
+    background-color: rgba(0, 0, 0, 0.781);
+    position: absolute;
+    border-radius: 50%;
+    left: 0px;
+    top: 0px;
+}
+.bookmark-tag {
+    display: none;
+}
