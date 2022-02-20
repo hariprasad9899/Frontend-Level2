@@ -1,0 +1,3 @@
+.bookmark button:nth-child(2)::before {
+    filter: brightness(2.2) sepia(2) hue-rotate(130deg) saturate(6);
+}
