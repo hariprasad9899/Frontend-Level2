@@ -1,3 +1,6 @@
 .bookmark button:nth-child(2)::before {
-    filter: brightness(2.2) sepia(2) hue-rotate(130deg) saturate(6);
+    filter: brightness(1.5) sepia(1) hue-rotate(130deg) saturate(2);
+}
+.bookmark .bmicon {
+    filter: brightness(1.5) sepia(1) hue-rotate(130deg) saturate(2);
 }

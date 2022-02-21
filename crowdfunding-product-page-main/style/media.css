@@ -5,6 +5,41 @@
     .content-card {
         width: 90%;
     }
+    .pledge-dialog {
+        width: 70%;
+        top: 600px;
+    }
+    .quan-left {
+        display: none;
+    }
+    .radio-btn {
+        width: 20%;
+    }
+    .pledge-details {
+        width: 90%;
+        display: block;
+        line-height: 10px;
+    }
+    .resquan {
+        display: block;
+    }
+    .pay {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .pay p {
+        width: 100%;
+        text-align: center;
+    }
+    .pay input[type="text"],.pay input[type="submit"]  {
+        width: 40%;
+        margin: auto;
+        padding: 15px;
+        border-radius: 50px;
+    }
+    .thank {
+        width: 50%;
+    }
 }
 @media screen and (max-width:500px) {
     body {
@@ -68,6 +103,14 @@
         margin-top: -10px;
     }
     .stand-price button {
+        width: 80%;
+    }
+    .pay input[type="text"],.pay input[type="submit"]  {
+        width: 45%;
+        margin: auto;
+        padding: 15px;
+    }
+    .thank {
         width: 80%;
     }
 
