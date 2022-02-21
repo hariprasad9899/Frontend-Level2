@@ -32,7 +32,7 @@
         text-align: center;
     }
     .pay input[type="text"],.pay input[type="submit"]  {
-        width: 40%;
+        width: 45%;
         margin: auto;
         padding: 15px;
         border-radius: 50px;
@@ -104,6 +104,13 @@
     }
     .stand-price button {
         width: 80%;
+    }
+    .pledge-dialog {
+        width: 90%;
+        top: 600px;
+    }
+    .selection .content-box {
+        margin-top: 25px;
     }
     .pay input[type="text"],.pay input[type="submit"]  {
         width: 45%;

@@ -1,19 +1,22 @@
-var menu_btn = document.getElementsByClassName('btn-box')[0];
-var mob_menu = document.getElementsByClassName('mob-menu')[0];
-var val = document.getElementById('val');
-var detailbox = document.getElementsByClassName('detail-box');
-var pledgebox =  document.getElementById('pledge');
-var main = document.getElementsByClassName('main')[0];
-var cover = document.getElementById('cover');
-var closebtn = document.getElementById('closebtn');
+var menu_btn,mob_menu,val,detailbox,pledgebox,main,cover,closebtn
 
+main = document.getElementsByClassName('main')[0];
+menu_btn = document.getElementsByClassName('btn-box')[0];
+mob_menu = document.getElementsByClassName('mob-menu')[0];
+val = document.getElementById('val');
+detailbox = document.getElementsByClassName('detail-box');
+pledgebox =  document.getElementById('pledge');
+cover = document.getElementById('cover');
+closebtn = document.getElementById('closebtn');
 
+// close button for dialog box
 closebtn.onclick = function(){
     pledgebox.style.display = 'none';
     cover.style.display = 'none';
 }
 
-console.log(val.innerText);
+
+// event lisnter to change the menu button Ham -image, on click to X - close image
 menu_btn.addEventListener('click', ()=> {
     var img = document.getElementById("btn-img")
     if (mob_menu.classList.contains('menu-show')){
@@ -25,7 +28,7 @@ menu_btn.addEventListener('click', ()=> {
     mob_menu.classList.toggle("menu-show")
 })
 
-
+// function to show the running numbers onload
 function exec() {
     setInterval( function addval(){
         value = parseInt(val.innerText);
@@ -38,6 +41,8 @@ function exec() {
         }
     },60)
 }
+
+// function to change the style, when clicked on "Back this project"
 function bookmark() {
     var _bookmark = document.getElementById('bookmark');
     var head = document.getElementsByTagName("HEAD")[0];
@@ -48,6 +53,16 @@ function bookmark() {
     _bookmark.style.color = "hsl(176, 72%, 28%)";
     _bookmark.style.backgroundColor = "white";
 }
+
+// function when clicked on select reward to display dialog box
+function selectReward() {
+    cover.style.display = "block"; // to dim the background
+    pledgebox.style.display = "block";
+    window.scrollTo(0, 0);
+}
+
+
+// to show the payment section, when user choose on radio button 
 function showPay(el){
     var pay = document.getElementsByClassName('pay');
     var selection = document.getElementsByClassName('selection');
@@ -67,11 +82,7 @@ for (let j = 0; j < detailbox.length; j++) {
         clicked_btn.click();
     })
 }
-function selectReward() {
-    cover.style.display = "block";
-    pledgebox.style.display = "block";
-    window.scrollTo(0, 0);
-}
+
 function submit(el) {
     var thank = document.getElementById('thank');
     thank.style.display = 'block';
