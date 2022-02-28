@@ -11,7 +11,7 @@
     --Light_Grayish_Red: hsl(14, 92%, 95%);
     --Light_Red: hsl(15, 100%, 70%);
     --Pale_Blue: hsl(226, 100%, 87%);
-    --White: hsl (0, 0%, 100%);
+    --White: hsl(0, 0%, 100%);
     --Very_Pale_Blue: hsl(230, 100%, 99%);
     --Light_Grayish_Blue: hsl(224, 65%, 95%);
     --Light_Grayish_Blue: hsl(223, 50%, 87%);
@@ -32,7 +32,7 @@ main {
     height: 100%;
     padding: 0;
     margin: auto;
-    background-color: rgb(241, 238, 238);
+    /* background-color: red; */
 }
 main .head {
     width: 100%;
@@ -57,4 +57,144 @@ main .head .header p {
     font-size: 0.8em;
     margin-top: -15px;
     color: var(--Grayish_Blue);
+}
+.card {
+    height: 70%;
+    width: 100%;
+    /* background-color: var(--Pale_Blue); */
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.card .pricing-component {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+.card .pricing-component .views {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    /* background-color: red; */
+}
+.card .pricing-component .views p {
+    color: var(--Grayish_Blue);
+    font-size: 0.9em;
+}
+.card .pricing-component .price {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    /* background-color: rgb(121, 173, 121); */
+}
+.card .pricing-component .price p {
+    color: var(--Dark_Desaturated_Blue);
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.card .pricing-component .price .month{
+    font-size: 0.5em;
+    color: var(--Grayish_Blue)
+}
+.card .pricing-component .bar {
+    grid-column: 1/-1;
+    display: grid;
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    /* background-color: yellow; */
+}
+
+/* .card .pricing-component .bar .slider {
+    width: 90%;
+    margin: auto;
+    accent-color: var(--Strong_Cyan);
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: var(--Soft_Cyan);
+    border-radius: 10px;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+} */
+input[type="range"] {
+    --webkitProgressCyanPercent: 10%;
+    --webkitProgressGrayPercent: 90%;
+    border: none;
+}
+
+.bar .slider {
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.bar .slider::-webkit-slider-runnable-track {
+    background: linear-gradient(to right,rgb(6, 235, 235) var(--webkitProgressCyanPercent),var(--Light_Grayish_Blue) var(--webkitProgressGrayPercent));
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 10px;
+}
+
+
+.bar .slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: -20px;
+    background: rgb(5, 228, 228) url(./images/icon-slider.svg) no-repeat center;
+    background-size: 30px;
+}
+.card .pricing-component .billing {
+    grid-column: 1/-1;
+    width: 100%;
+    height: 60px;
+    /* background-color: pink; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+}
+.billing p {
+    color: var(--Grayish_Blue);
+    font-size: 0.7em;
+}
+.billing .offer  p{
+    text-align: center;
+    color: var(--Light_Red);
+    font-weight: 400;
+    background-color: var(--Light_Grayish_Red);
+}
+.billing .toggle {
+    width: 70px;
+    height: 30px;
+    border: 0px solid black;
+    background-color: var(--Light_Grayish_Blue);
+    border-radius: 15px;
+    position: relative;
+}
+.billing .toggle .inner {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 2px;
 }
