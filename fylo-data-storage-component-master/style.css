@@ -23,9 +23,7 @@ main {
 }
 .container {
     width: 60%;
-    /* height: 40%; */
     position: relative;
-    background-color: lightblue;
     margin: auto;
     display: flex;
     align-items: center;
@@ -33,7 +31,6 @@ main {
 }
 .box-one {
     width: 40%;
-    /* height: 150px; */
     padding: 30px;
     border-top-right-radius: 100px;
     background-color: var(--Dark_Blue);
@@ -53,7 +50,6 @@ main {
     display: flex;
     align-items: center;
     gap: 40px;
-    /* background-color: red;     */
     display: flex;
     gap: 10px;
 }
@@ -108,7 +104,7 @@ main {
 .container .data-left {
     position: absolute;
     color: black;
-    top: -30px;
+    top: 5px;
     right: 30px;
     width: 150px;
     text-align: center;
@@ -120,12 +116,14 @@ main {
 .container .data-left::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
-    transform: rotate(150deg);
+    bottom: -20px;
     right: 0;
-    bottom: -10px;
-    background:url(./images/)
+    width: 0; 
+    height: 0; 
+    border-left: 1px solid transparent;
+    border-right: 30px solid transparent;
+    transform: rotate(180deg);
+    border-bottom: 30px solid white;
 }
 .container .data-left p {
     font-size: 2em;

@@ -1,4 +1,8 @@
 @media screen and (max-width:800px) {
+    main {
+        background: var(--Very_Dark_Blue) url(./images/bg-mobile.png) center no-repeat;
+        background-size: cover;
+    }
     .container {
         width: 80%;
         flex-direction: column;
@@ -23,8 +27,12 @@
         left: 50%;
         transform: translate(-50%,-50%);
     }
+    .container .data-left::after {
+        display: none;
+    }
 }
 @media screen and (max-width:500px) {
+    
     .box-two .message {
         font-size: 0.8em;
     }
