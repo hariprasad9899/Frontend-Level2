@@ -113,7 +113,6 @@ body,html {
     padding-left: 20px;
     line-height: 0.1;
 }
-
 .container-one .tagline-box p {
     font-weight: 500;
     font-size: 3em;
@@ -254,7 +253,6 @@ body,html {
     color: black;
     font-weight: 700;
 }
-
 .wrapper-three .frames .img-box:nth-child(4), 
 .wrapper-three .frames .img-box:nth-child(8) {
     margin-right: 0px;
