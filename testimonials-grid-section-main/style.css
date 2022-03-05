@@ -9,7 +9,9 @@
     --Moderate_violet: hsl(263, 55%, 52%);
     --Very_dark_grayish_blue: hsl(217, 19%, 35%);
     --Very_dark_blackish_blue: hsl(219, 29%, 14%);
-    --White: hsl(0, 0%, 100%);
+    --White: hsl(0, 0%, 100%);    
+    --Light_gray: hsl(0, 0%, 81%);
+    --Light_grayish_blue: hsl(210, 46%, 95%);
 }
 body,html,main {
     width: 100%;
@@ -25,7 +27,6 @@ main {
     width: 80%;
     height: 80%;
     margin: auto;
-    /* background-color: lightpink; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: 1fr 1fr;
@@ -34,24 +35,95 @@ main {
 .box {
     width: 100%;
     height: 100%;
+    padding: 25px;
+    padding-top: 15px;
     border-radius: 10px;
 }
 .one{
     grid-column: 1/3;
-    background-color: lightcyan;
+    background:url(./images/bg-pattern-quotation.svg) top no-repeat;
+    background-position-x: 80%;
+    background-color: var(--Moderate_violet);
 }
 .two {
-    background-color: lightgray;
+    background-color: var(--Very_dark_grayish_blue);
 }
 .three {
     grid-column: 4/5;
     grid-row: -3/-1;
-    background-color: lightgreen;
+    box-shadow: 0 10px 30px rgba(49, 48, 48, 0.295);
+    background-color: white;
 }
 .four {
-    background-color: aquamarine;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(49, 48, 48, 0.295);
 }
 .five {
     grid-column:-4/-2 ;
-    background-color: lightsalmon;
+    background-color: var(--Very_dark_blackish_blue)
+}
+.box .user {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    align-items: center;
+}
+.user .img-box img{
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+.user .name {
+    margin-top: -10px;
+}
+.user .name p:nth-child(1) {
+    color: white;
+}
+.user .name p:nth-child(2){
+    margin-top: -15px;
+    font-size: 0.8em;
+    color: var(--Very_dark_grayish_blue);   
+}
+
+.one .user .name p:nth-child(2) {
+    color: var(--Light_grayish_blue);
+}
+.two .user .name p:nth-child(2) {
+    color: var(--Light_gray);
+}
+.three .user .name p:nth-child(1) {
+    color: var(--Very_dark_blackish_blue)
+}
+.three .user .name p:nth-child(2) {
+    color: var(--Light_gray);
+}
+.four .user .name p:nth-child(1) {
+    color: var(--Very_dark_grayish_blue);
+}
+.four .user .name p:nth-child(2) {
+    color: var(--Light_gray);
+}
+.five .user .name p:nth-child(2) {
+    color: var(--Very_dark_grayish_blue);
+}
+.five .user .img-box img {
+    border: 2px solid var(--Moderate_violet);
+}
+.box section p {
+    font-size: 0.9em;
+    color: var(--Light_gray);
+}
+.one section h3,
+.two section h3 {
+    color: white;
+}
+.three section h3,
+.four section h3 {
+    color: var(--Very_dark_grayish_blue);
+}
+.three section p {
+    font-size: 0.89em;
+}
+.five section h3 {
+    color: white;
 }

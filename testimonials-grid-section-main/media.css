@@ -1,4 +1,4 @@
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     .container {
         width: 90%;
         display: flex;
@@ -9,5 +9,10 @@
         width: 90%;
         height: 100%;
     }
-    
+    .container .five {
+        order: 3;
+    }
+    .container .three {
+        order: 5;
+    }
 }
