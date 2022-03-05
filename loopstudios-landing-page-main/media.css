@@ -1,0 +1,156 @@
+@media screen and (max-width:1000px) {
+    .container-one .tagline-box p {
+        font-size: 2.4em;
+    }
+    .wrapper-two .vr-leader .about p:nth-child(1) {
+        font-size: 1.8em;
+    }
+    .wrapper-two .vr-leader .about p:nth-child(2) {
+        font-size: 0.7em;
+    }
+    .container-three {
+        margin-top: 10%;
+    }
+    .loopstudio .content nav a {
+        font-size: 1em;
+        margin: 5px;
+    }
+    .social .soc-content .content-wrapper nav a {
+        font-size: 1.5em;
+    }
+    .wrapper-three .frames .img-box p {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:700px) {
+    *::before,
+    *::after,
+    * {
+        box-sizing: border-box;
+    }
+    main {
+        background: url(./images/mobile/image-hero.jpg) center no-repeat;
+    }
+    .menu {
+        display: none;
+    }
+    .mob-menu {
+        display: block;
+    }
+    .container-one .tagline-box {
+        width: 90%;
+        margin-left: 5%;
+        line-height: 0.3;
+        padding-left: 10px;
+    }
+    .container-one .tagline-box p {
+        font-size: 2em;
+    }
+    .container-two .wrapper-two {
+        flex-direction: column;
+    }
+    .wrapper-two .img-container, .wrapper-two .vr-leader {
+        width: 100%;
+        height: 100%;    
+    }
+    .wrapper-two .vr-leader {
+        align-self: flex-start;
+        margin-left:0px;
+    }
+    .wrapper-two .vr-leader .about {
+        margin-left:15px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right:10px;
+    }
+    .wrapper-two .vr-leader .about p:nth-child(1) {
+        font-size: 1.6em;
+    }
+    .wrapper-two .vr-leader .about p:nth-child(2) {
+        font-size: 0.6em;
+        line-height: 2;
+    }
+    .container-three .wrapper-three .title {
+        justify-content: center;
+    }
+    .container-three .wrapper-three .title button {
+        display: none;
+    }
+    .wrapper-three .mob-button {
+        display: grid;
+    }
+    .wrapper-three .frames {
+        flex-direction: column;
+    }
+    .wrapper-three .frames .img-box {
+        width: 100%;
+        height: 150px;
+    }
+    .wrapper-three .frames .img-box:hover ::after {
+        height: 150px;
+    }
+    .wrapper-three .frames .img-box p {
+        margin-top: 50px;
+    }
+    .wrapper-three .frames .img-box:nth-child(4), 
+    .wrapper-three .frames .img-box:nth-child(8) {
+    margin-right: 5px;
+    margin-bottom: 20px;
+    }
+
+    .wrapper-three .frames .img-box:nth-child(1) {
+        background: url(./images/mobile/image-deep-earth.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(2) {
+        background: url(./images/mobile/image-night-arcade.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(3) {
+        background: url(./images/mobile/image-soccer-team.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(4) {
+        background: url(./images/mobile/image-grid.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(5) {
+        background: url(./images/mobile/image-from-above.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(6) {
+        background: url(./images/mobile/image-pocket-borealis.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(7) {
+        background: url(./images/mobile/image-curiosity.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .wrapper-three .frames .img-box:nth-child(8) {
+        background: url(./images/mobile/image-fisheye.jpg) center no-repeat;
+        background-size: cover;
+    }
+    .container-four {
+        flex-direction: column;
+    }
+    .container-four .loopstudio,
+    .container-four .social {
+        width: 100%;
+    }
+    .container-four .loopstudio .content {
+        margin: auto;
+        text-align: center;
+    }
+    .loopstudio .content nav {
+        flex-direction: column;
+    }
+    .loopstudio .content nav a {
+        font-size: 1em;
+        margin: 8px;
+    }
+    .container-four .social .soc-content {
+        margin: auto;
+        text-align: center;
+    }
+   
+}
