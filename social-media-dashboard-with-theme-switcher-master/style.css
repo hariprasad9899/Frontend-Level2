@@ -1,1 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(230, 17%, 14%);
+}
+.top-background {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background-color: hsl(232, 19%, 15%);
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px;
+    z-index: -1;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+main .title {
+    width: 80%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    background-color: lightcoral;
+}
+
+.title .app-name {
+    width: 50%;
+    background-color: lawngreen;
+}
+.title .toggle {
+    width: 50%;
+    background-color: lightblue;
+}
