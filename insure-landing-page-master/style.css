@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,body,main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.top-bar {
+    width: 100%;
+    height: 15%;
+    background-color: lightgreen;
+}
+.menu {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    /* background-color: lightgreen; */
+}
+.company-name {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: lightskyblue; */
+}
+.navigations {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+    /* background-color: lightpink; */
+}
+.navigations ul {
+    list-style-type: none;
+    display: flex;
+}
+.navigations ul li {
+    width: 110px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+
+}
+.navigations ul li a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.navigations ul .active {
+    border: 2px solid hsl(270, 9%, 17%);
+}
+.navigations ul .active a {
+    font-weight: 700;
+    font-size: 0.8em;
+    color: hsl(270, 9%, 17%);
+}
+.hamburger-menu {
+    width: 70%;
+    height: 100%;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: red;
+    top: 0%;
+    background:hsl(270, 9%, 17%) url(./images/bg-pattern-mobile-nav.svg) bottom no-repeat;
+    background-size: contain;
+}
+.show {
+    display: none;
+}

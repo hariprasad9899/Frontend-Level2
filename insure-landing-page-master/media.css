@@ -1,0 +1,39 @@
+@media screen and (max-width:900px) {
+    .menu {
+        width: 90%;
+    }   
+}
+@media screen and (max-width:700px) {
+     .navigations {
+         display: none;
+     }
+     .hamburger-menu {
+         display: flex;
+     }
+     .show {
+        display: block;
+    }
+    .dropdown-menu .navigations {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        margin-top: -50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .dropdown-menu .navigations ul {
+        flex-direction: column;
+    }
+    .dropdown-menu .navigations ul li {
+        margin: 10px;
+        height: 40px;
+        width: 180px;
+    }
+    .dropdown-menu .navigations ul li a {
+        color: white;
+        font-size: 1.3em;
+    }
+    .dropdown-menu .navigations ul .active {
+        border: 2px solid white;
+    }
+}
