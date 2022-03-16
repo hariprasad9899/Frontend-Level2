@@ -34,5 +34,5 @@ toggle_btn.onclick = function() {
         h2[i].classList.toggle("white-text");
     }
 
-    
+    console.log(body)
 }
