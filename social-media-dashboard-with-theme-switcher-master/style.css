@@ -7,7 +7,6 @@
 html,body {
     padding: 0;
     margin: 0;
-    height: 100%;
     width: 100%;
     font-family: 'Inter', sans-serif;
     background-color: hsl(230, 17%, 14%);
@@ -16,20 +15,22 @@ html .white-background {
     background-color: white;
 }
 .top-background {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 30%;
     background-color: hsl(232, 19%, 15%);
     border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px;
-    z-index: -1;
+    z-index: 1;
 }
-
+.white-top-bg {
+    background-color: hsl(229, 28%, 67%);
+}
 main {
     width: 100%;
-    height: 100%;
 }
 main .title {
+    z-index: 100;
     width: 80%;
     margin: auto;
     display: flex;
@@ -53,7 +54,7 @@ main .title {
     color: white;
 }
 
-.title .app-name .white-background {
+.title .app-name .white-text {
     color: hsl(230, 17%, 14%);
 }
 .title .app-name p {
@@ -120,9 +121,8 @@ main .followers {
     background-color: hsl(227, 47%, 96%);
 }
 .followers .white-background:hover {
-    background-color: hsla(227, 23%, 62%, 0.301);
+    background-color: hsla(227, 20%, 82%, 0.849);
 }
-
 
 .followers .follower-cards:nth-child(1) {
     border-top: 4px solid hsl(208, 92%, 53%);
@@ -142,14 +142,21 @@ main .followers {
     border-bottom: none;
     border-right: none;
 }
-
+.followers .follower-cards:nth-child(3):hover {
+    background: 
+    linear-gradient(rgb(41, 46, 75),rgb(57, 63, 99)) padding-box,
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box;
+}
 .followers .special-white{
     background: 
     linear-gradient(hsl(227, 47%, 96%),hsl(227, 47%, 96%)) padding-box,
     linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box !important;
 }
-
-
+.followers .special-white:hover {
+    background: 
+    linear-gradient(hsla(227, 20%, 82%),hsla(227, 20%, 82%)) padding-box,
+    linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) border-box !important;
+}
 .follower-cards .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -168,7 +175,7 @@ main .followers {
     color: white;
     font-size: 3em;
 }
-.content-wrapper .count .white-background {
+.content-wrapper .count .white-text {
     color: hsl(230, 17%, 14%);
 }
 .content-wrapper .count p {
@@ -196,7 +203,7 @@ main .overview-title {
     margin: auto;
     color: white;
 }
-main .overview-title .white-background {
+main .overview-title .white-text {
     color: hsl(230, 17%, 14%);
 }
 main .overview {
@@ -218,13 +225,15 @@ main .overview {
 }
 .overview .overview-cards:hover {
     cursor: pointer;
-    background-color: hsla(230, 27%, 35%, 0.63);
+    background-color: hsla(229, 26%, 56%, 0.63);
 }
 
 .overview .white-background {
     background-color: hsl(227, 47%, 96%);
 }
-
+.overview .white-background:hover {
+    background-color: hsla(227, 20%, 82%, 0.849);
+}
 
 .overview-cards .column-wrapper {
     display: flex;
@@ -248,7 +257,7 @@ main .overview {
     color: white;
     font-size: 2em;
 }
-.column-wrapper .values .white-background {
+.column-wrapper .values .white-text {
     color: hsl(230, 17%, 14%);
 }
 .column-wrapper .values .spikes {

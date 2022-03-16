@@ -3,6 +3,7 @@ const toggle_ball = document.getElementById("toggle-ball");
 const body = document.getElementsByTagName('body')[0];
 const follower_cards = document.getElementsByClassName('follower-cards');
 const overview_cards = document.getElementsByClassName('overview-cards');
+const top_background = document.getElementById("top-bg");
 const h1 = document.getElementsByTagName("H1");
 const h2 = document.getElementsByTagName("H2");
 
@@ -11,9 +12,11 @@ toggle_btn.onclick = function() {
     toggle_ball.classList.toggle('move');
     toggle_btn.classList.toggle('white-background');
     body.classList.toggle("white-background");
+    top_background.classList.toggle("white-top-bg");
     for (let i = 0; i < follower_cards.length; i++) {
         if (i != 2) {
             follower_cards[i].classList.toggle("white-background");
+            follower_cards[i].classList.toggle("hover-background")
         } else {
             follower_cards[2].classList.toggle("special-white");
         }
@@ -24,11 +27,11 @@ toggle_btn.onclick = function() {
     }
 
     for (let i = 0; i < h1.length; i++) {
-        h1[i].classList.toggle("white-background");
+        h1[i].classList.toggle("white-text");
     }
 
     for (let i = 0; i < h2.length; i++) {
-        h2[i].classList.toggle("white-background");
+        h2[i].classList.toggle("white-text");
     }
 
     
