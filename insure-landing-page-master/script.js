@@ -1,18 +1,25 @@
+
 const nav_elem = document.getElementsByClassName('navigations')[0];
-const mob_nav_elem = document.getElementsByClassName('mobmenus')[0];
 const list_elem = nav_elem.getElementsByTagName('li');
-const mob_list_elem = mob_nav_elem.getElementsByTagName('li');
 const btn = document.getElementById('btn');
 const dropdown_menu = document.getElementsByClassName('dropdown-menu')[0];
 
+const mobmenus = document.getElementsByClassName('mobmenus')[0];
+const ul = mobmenus.getElementsByTagName("UL")[0];
+const lis = ul.getElementsByTagName("LI")
 
+let test = document.getElementsByClassName('test');
+testArr = Object.values(test);
 
-for (let i = 0; i < mob_list_elem.length; i++) {
-    mob_list_elem[i].onclick = function() {
-        console.log("Please give the output")
-    }
+for (let i = 0; i < test.length; i++) {
+    test[i].addEventListener('click', () => {
+        testArr.forEach(item => {
+            item.classList.remove("active");
+        }) 
+        test[i].classList.add("active");
+    })
+
 }
-
 
 
 myMenuArr = Object.values(list_elem)
@@ -24,24 +31,6 @@ myMenuArr.forEach(element => {
         element.classList.add("active");
     })
 });
-
-myMobMenuArr = Object.values(mob_list_elem)
-
-
-
-
-
-// myMobMenuArr.forEach(element => {
-//     element.addEventListener('click', () => {
-//         alert("Hello");
-//         // myMobMenuArr.forEach(item => {
-//         //     item.classList.remove("active");
-//         // })
-//         // element.classList.add("active");
-//     })
-// });
-
-
 
 
 btn.addEventListener('click', () => {
@@ -55,3 +44,14 @@ btn.addEventListener('click', () => {
         dropdown_menu.classList.toggle('show');
     }
 })
+
+
+const check = document.getElementById("check");
+
+console.log(check.parentElement);
+
+
+
+
+
+

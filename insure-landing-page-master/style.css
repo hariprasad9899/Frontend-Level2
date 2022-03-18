@@ -15,8 +15,9 @@ html,body,main {
 }
 .top-bar {
     width: 100%;
-    height: 15%;
-    background-color: lightgreen;
+    height: 10%;
+    z-index: 2;
+    background-color: lightyellow;
 }
 .menu {
     width: 80%;
@@ -50,7 +51,6 @@ html,body,main {
     height: 30px;
     padding: 5px;
     text-align: center;
-
 }
 .navigations ul li a {
     text-decoration: none;
@@ -76,17 +76,80 @@ html,body,main {
     align-items: center;
 }
 
+.mobmenus{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+}
+.mobmenus ul {
+    list-style-type: none;
+    display: flex;
+}
+.mobmenus ul li {
+    width: 110px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+.mobmenus ul li a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+}
 .dropdown-menu {
     position: absolute;
-    z-index: -1;
     width: 100%;
-    height: 100%;
-    display: none;
-    background-color: red;
-    top: 0%;
+    height: 82%;
+    opacity: 0;
+    z-index: 99;
+    top: 13%;
     background:hsl(270, 9%, 17%) url(./images/bg-pattern-mobile-nav.svg) bottom no-repeat;
-    background-size: contain;
+    background-size: 100% 30%;
+    transition: 0.4s ease-in-out;
 }
 .show {
-    display: none;
+    opacity: 0;
+}
+.content-container {
+    width: 100%;
+    height: 80%;
+    z-index: 0;
+    position: relative;
+    display: grid;
+    background-color: lightblue;
+}
+.violet-bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1;    
+    height: 80%;
+    background-color: hsl(256, 26%, 20%);
+}
+.flex-wrapper {
+    width: 80%;
+    height: 80%;
+    background-color: lightpink;
+    z-index: 2;
+    margin: auto;
+    margin-top: 8%;
+    display: flex;
+}
+
+.flex-wrapper .about-insure {
+    width: 50%;
+    /* height: 100%; */
+    background-color: lightcoral;
+}
+.flex-wrapper .family-img {
+    width: 50%;
+    position: relative;
+    /* height: 100%; */
+    background: url(./images/image-intro-desktop.jpg) top no-repeat;
+    background-size: 100% 100%;
+    background-color: lightgreen;
 }
