@@ -1,9 +1,25 @@
-@media screen and (max-width:900px) {
+
+@media screen and (max-width:1000px) {
     .menu {
         width: 90%;
-    }   
+    } 
+    .navigations ul li {
+        padding: 3px;
+    } 
+    .navigations ul li a {
+        font-size: 0.7em;
+        font-weight: 500;
+    } 
+    .navigations ul .active a {
+        font-weight: 600;
+        font-size: 0.6em;
+    }
+    .insure h1 {
+        font-size:3em;
+    }
+
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
      .navigations {
          display: none;
      }
@@ -11,7 +27,7 @@
          display: flex;
      }
      .show {
-         opacity: 1;
+         display: block;
      }
     .dropdown-menu .mobmenus {
         display: flex;
@@ -37,6 +53,53 @@
     .dropdown-menu .mobmenus ul .active {
         border: 2px solid white;
     }
+
+    .container-two {
+        height: 140%;
+        background: linear-gradient(to bottom, hsl(256, 26%, 20%)120%, hsl(256, 26%, 20%)0%);
+    }
+    .content {
+        height: 100vh;
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .imgbox {
+        width: 100%;
+        height: 60%;
+        order: 1;
+        background-image: url(./images/image-intro-mobile.jpg);
+    }
+    .insure {
+        width: 100%;
+        height: 40%;
+        order: 2;
+        padding: 10px;
+        text-align: center;
+        border: none;
+    }
+    .insure h1 {
+        font-size:3em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:500px) {
+    .content-container {
+        height: 1000px;
+    }
     .violet-bg {
         height: 100%;
     }
@@ -49,14 +112,16 @@
     .flex-wrapper .about-insure ,
     .flex-wrapper .family-img {
         width: 100%;
-        height: 50%;
     }
     .flex-wrapper .about-insure  {
         order: 2;
-    }
+        height: 30%;
+    } 
     .flex-wrapper .family-img {
+        height: 80%;
         order: 1;
-        background: url(./images/image-intro-mobile.jpg) top no-repeat;
-        background-size: 100% 170%;
+        background: url(./images/image-intro-mobile.jpg) center no-repeat;
+        background-size: 100% 100%;
     }
-}
+
+} */
