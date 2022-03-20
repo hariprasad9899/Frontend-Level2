@@ -13,27 +13,26 @@ html,body,main {
     width: 100%;
     height: 100%;
 }
+
 .top-bar {
     width: 100%;
-    height: 10%;
     z-index: 2;
-    /* background-color: lightyellow; */
 }
 .menu {
     width: 80%;
-    height: 100%;
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin: auto;
     display: flex;
 }
 .company-name {
     width: 30%;
-    height: 100%;
     display: flex;
     align-items: center;
 }
 .navigations {
     width: 70%;
-    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -45,8 +44,9 @@ html,body,main {
 }
 .navigations ul li {
     width: 110px;
-    height: 30px;
     padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
 }
 .navigations ul li a {
@@ -55,6 +55,12 @@ html,body,main {
     font-family: 'Karla', sans-serif;
     font-size: 0.8em;
     font-weight: 600;
+}
+.navigations ul li:hover {
+    background-color: hsl(270, 9%, 17%);
+}
+.navigations ul li:hover a {
+    color: white;
 }
 
 .navigations ul .active {
@@ -67,64 +73,25 @@ html,body,main {
 }
 .hamburger-menu {
     width: 70%;
-    height: 100%;
-    display: none;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.mobmenus{
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: right;
-}
-.mobmenus ul {
-    list-style-type: none;
-    display: flex;
-}
-.mobmenus ul li {
-    width: 110px;
-    height: 30px;
-    padding: 5px;
-    text-align: center;
-}
-.mobmenus ul li a {
-    text-decoration: none;
-    color: hsl(273, 4%, 51%);
-    font-family: 'Karla', sans-serif;
-    font-size: 0.8em;
-    font-weight: 600;
-}
-.dropdown-menu {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    z-index: 99;
-    top: 13%;
-    background:hsl(270, 9%, 17%) url(./images/bg-pattern-mobile-nav.svg) bottom no-repeat;
-    background-size: 100% 30%;
-    transition: 0.4s ease-in-out;
-}
-.show {
     display: none;
 }
 
 .container-two {
     width: 100%;
-    /* height: 100%; */
+    position: relative;
     display: flex;
+    z-index: 0;
     background:linear-gradient(to bottom, hsl(256, 26%, 20%)80%, white 20%);
 }
 .content {
     width: 80%;
-    /* height: 80%; */
     margin: auto;
     margin-top: 5%;
     display: flex;
+}
+.imgbox img {
+    width: 100%;
+    height: 100%;
 }
 .insure {
     width: 55%;
@@ -152,13 +119,11 @@ html,body,main {
     background-color: transparent;
     border: 2px solid white;
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-top: 3%;
+    z-index: 1;
     font-family: 'Karla', sans-serif;
 }
-
-
-
 .container-three {
     width: 100%;
     margin-top: 5%;
@@ -202,106 +167,161 @@ html,body,main {
     font-weight: 500;
     font-family: 'DM Serif Display', serif;
 }
-
-/* working code ******************************************************************** */ 
-
-/* .container-two {
+.container-four {
     width: 100%;
-    height: 100%;
-    display: grid;
-    background: linear-gradient(to bottom, hsl(256, 26%, 20%)80%, white 20%) !important;
+    margin-top: 5%;
 }
-.content {
+.more {
     width: 80%;
-    height: 80%;
     margin: auto;
-    margin-top: 50px;
+    position: relative;
+    z-index: 0;
     display: flex;
-}
-.insure {
-    width: 55%;
     color: white;
-    padding-right: 5px;
-    border-top: 1px solid;
-    border-image: linear-gradient(to right, white 30%, hsl(256, 26%, 20%) 30%) 100% 1;
+    padding: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: hsl(256, 26%, 20%);
 }
-.imgbox {
-    width: 45%;
-    background-image: url(./images/image-intro-desktop.jpg);
-    background-size: 100% 100%;
+.text {
+    width: 60%;
+    display: grid;
+    line-height: 1;
 }
-.insure h1 {
-    margin-top: 50px;
-    font-size:4em;
-    font-weight: 400;
+.text h1 {
+    font-size: 3.5em;
+    font-weight: 500;
+    margin: auto;
     font-family: 'DM Serif Display', serif;
 }
-.insure p {
-    margin-top: -25px;
-    font-size: 1em;
-    line-height: 1.5;
-    font-family: 'Karla', sans-serif;
+.find-button {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
-.insure button {
-    width: 30%;
+.find-button button {
+    width: 40%;
     padding: 10px;
     color: white;
     background-color: transparent;
     border: 2px solid white;
     font-weight: 700;
-    font-size: 0.8em;
-    margin-top: 3%;
+    z-index: 1;
+    font-size: 0.9em;
+    margin-right: 30px;
     font-family: 'Karla', sans-serif;
 }
-.bgclip-one {
-    position: absolute;
-    width: 30%;
-    height:70%;
-    right: 0;
-    background: url(./images/bg-pattern-intro-right-desktop.svg) top right no-repeat;
-    background-size: 100% 75%;
-    background-position-x:  50%;
-    background-position-y:1%;
+button:hover {
+    cursor: pointer;
+    color: hsl(256, 26%, 20%);
+    background-color: white;
 }
-.container-three {
+.footer-part {
     width: 100%;
-}
-.options {
+    margin-top: 5%;
+    padding-bottom: 70px;
+    background: hsl(0, 0%, 98%) url(./images/bg-pattern-footer-desktop.svg) left no-repeat;
+    background-size: 40% 80%; 
+    background-position-y: -50px;
+    background-position-x: -5%;
+}   
+.footer-content {
     width: 80%;
     margin: auto;
-    margin-top: 0px;
+}
+.social {
+    width: 100%;
+    padding: 30px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
-    flex-direction: column;
-    border-top: 1px solid transparent;
-    border-image: linear-gradient(to right, hsl(273, 4%, 51%) 15%, white 15%) 100% 1;
+    border-bottom: 1px solid hsl(273, 4%, 51%);
 }
-.header {
+.name {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.icons {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.soc-icons nav a i{
+    color: hsl(273, 4%, 51%);
+    margin: 6px;
+}
+.soc-icons nav a i:hover {
+    color: hsl(256, 26%, 20%);
+}
+.other-links {
     width: 100%;
-    height: 30%;
-}
-.header h1 {
-    color: hsl(270, 9%, 17%);
-    font-size: 4em;
-    font-weight: 400;
-    font-family: 'DM Serif Display', serif;
-}
-.plans {
-    width: 100%;
-    height: 70%;
     display: flex;
     justify-content: space-between;
 }
-.box {
-    width: 30%;
+.link-box {
+    width: 24%;
+    padding: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
 }
-.about-plan p {
-    font-size: 0.9em;
-    line-height: 1.3;
-    color: hsl(273, 4%, 51%);
+.link-box h4 {
     font-family: 'Karla', sans-serif;
+    color: hsl(273, 4%, 51%);
 }
-.plan-name h2 {
-    font-size: 1.7em;
-    font-weight: 500;
-    font-family: 'DM Serif Display', serif;
-} */
+.link-box nav {
+    display: flex;
+    flex-direction: column;
+}
+.link-box nav a {
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+    font-size: 0.9em;
+    font-family: 'Karla', sans-serif;
+    margin-top: 10px;
+}
+.link-box nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: hsl(270, 9%, 17%);
+}
+
+.bgclip-one,
+.bgclip-two,
+.bgclip-three {
+    position: absolute;
+    width: 50%;
+}
+.bgclip-one {
+    height: 80%;
+    top: 0;
+    right: 0;
+    background: url(./images/bg-pattern-intro-right-desktop.svg) right no-repeat;
+    background-size: contain;
+    background-position-x: 100% ;
+    background-position-y: -95px;
+}
+
+.bgclip-two {
+    height: 60%;
+    top: 60%;
+    left: 0;
+    z-index: -1;
+    background: url(./images/bg-pattern-intro-left-desktop.svg) left bottom no-repeat;
+    background-size: 25%;
+    background-position-y:5px;
+}
+.bgclip-three {
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+    background: url(./images/bg-pattern-how-we-work-desktop.svg) right no-repeat;
+    background-size: 70% 100%;
+}

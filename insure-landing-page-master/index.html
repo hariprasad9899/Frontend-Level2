@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/52d0ff79dd.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Insure landing page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="media.css">
 </head>
 <body>
+ 
   <main>
     <div class="top-bar">
       <div class="menu">
@@ -25,17 +27,8 @@
           </ul>
         </div>
         <div class="hamburger-menu">
-          <img id="btn" class="open" src="./images/icon-hamburger.svg" alt="">
+          <img id="open-btn" class="open" src="./images/icon-hamburger.svg" alt="">
         </div>
-      </div>
-      <div class="dropdown-menu">
-        <div class="mobmenus">
-          <ul>
-            <li class="test"><a href="#">HOW WE WORK</a></li>
-            <li class="test"><a href="#">BLOG</a></li>
-            <li class="test"><a href="#">HARI</a></li>
-            <li class="test"><a href="#">VIEW PLANS</a></li>
-          </ul>
       </div>
     </div>
     </div>
@@ -58,6 +51,7 @@
         </div>
       </div>
       <div class="bgclip-one"></div>
+      <div class="bgclip-two"></div>
     </div>
     
     
@@ -118,8 +112,108 @@
         </div>
       </div>
     </div>
+
+    <div class="container-four">
+      <div class="more">
+        <div class="text">
+          <h1>
+            Find out more <br> about how we work
+          </h1>
+        </div>
+        <div class="find-button">
+          <button>HOW HE WORK</button>
+        </div>
+        <div class="bgclip-three"></div>
+      </div>
+    </div>
+
+    <div class="footer-part">
+      <div class="footer-content">
+        <div class="social">
+          <div class="name">
+            <img src="./images/logo.svg" alt="">
+          </div>
+          <div class="icons">
+            <div class="soc-icons">
+              <nav>
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href=""><i class="fab fa-twitter fa-2x"></i></a>
+                <a href=""><i class="fab fa-pinterest fa-2x"></i></a>
+                <a href=""><i class="fab fa-instagram fa-2x"></i></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="other-links">
+
+          <div class="link-box">
+            <h4>OUR COMPANY</h4>
+            <nav>
+              <a href="">HOW WE WORK</a>
+              <a href="">WHY INSURE ?</a>
+              <a href="">VIEW PLANS</a>
+              <a href="">REVIEWS</a>
+            </nav>
+          </div>
+
+          <div class="link-box">
+            <h4>HELP ME</h4>
+            <nav>
+              <a href="">FAQ</a>
+              <a href="">TERMS OF USE</a>
+              <a href="">PRIVACY POLICY</a>
+              <a href="">COOKIES</a>
+            </nav>
+          </div>
+
+          <div class="link-box">
+            <h4>CONTACT</h4>
+            <nav>
+              <a href="">Sales</a>
+              <a href="">Support</a>
+              <a href="">Live chat</a>
+            </nav>
+          </div>
+
+          <div class="link-box">
+            <h4>OTHERS</h4>
+            <nav>
+              <a href="">CARRERS</a>
+              <a href="">PRESS</a>
+              <a href="">LICENSES</a>
+            </nav>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </main>
-  
+
+
+  <div class="dropdown-menu" style="display: none;">
+    <div class="top-bar">
+      <div class="menu">
+        <div class="company-name">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="hamburger-menu">
+          <img id="close-btn" class="open" src="./images/icon-close.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="mobmenus">
+      <ul>
+        <li class="test"><a href="#">HOW WE WORK</a></li>
+        <li class="test"><a href="#">BLOG</a></li>
+        <li class="test"><a href="#">ACCOUNT</a></li>
+        <li class="test"><a href="#">VIEW PLANS</a></li>
+      </ul>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>

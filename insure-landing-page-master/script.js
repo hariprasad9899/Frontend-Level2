@@ -1,7 +1,8 @@
 
 const nav_elem = document.getElementsByClassName('navigations')[0];
 const list_elem = nav_elem.getElementsByTagName('li');
-const btn = document.getElementById('btn');
+const open_btn = document.getElementById('open-btn');
+const close_btn = document.getElementById('close-btn');
 const dropdown_menu = document.getElementsByClassName('dropdown-menu')[0];
 
 const mobmenus = document.getElementsByClassName('mobmenus')[0];
@@ -21,7 +22,6 @@ for (let i = 0; i < test.length; i++) {
 
 }
 
-
 myMenuArr = Object.values(list_elem)
 myMenuArr.forEach(element => {
     element.addEventListener('click', () => {
@@ -32,23 +32,19 @@ myMenuArr.forEach(element => {
     })
 });
 
-
-btn.addEventListener('click', () => {
-    if(btn.classList.contains("open")) {
-        btn.src = "./images/icon-close.svg";
-        btn.classList.toggle('open');
-        dropdown_menu.classList.toggle('show');
-    } else {
-        btn.src = "./images/icon-hamburger.svg";
-        btn.classList.toggle('open');
-        dropdown_menu.classList.toggle('show');
-    }
-})
+open_btn.onclick = function() {
+    dropdown_menu.style.display = "block";
+    document.body.classList.add("stop-scrolling");
+}
+close_btn.onclick = function() {
+    dropdown_menu.style.display = "none";
+    document.body.classList.remove("stop-scrolling");
+}
 
 
-const check = document.getElementById("check");
 
-console.log(check.parentElement);
+
+
 
 
 
