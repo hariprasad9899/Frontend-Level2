@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100%;
+    background:hsl(240, 78%, 98%) url(./images/bg-top.svg) top right no-repeat;
+}
+.container-top {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.header h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    color: hsl(233, 13%, 49%);
+    margin-top: 0px;
+}
+.toggle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.wrapper {
+    width: 70px;
+    height: 40px;
+    position: relative;
+    border-radius: 60px;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.wrapper .ball {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: 50%;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.wrapper .move {
+    left: 50%;
+}
+.gray-bg {
+    background: linear-gradient(to right,hsl(234, 14%, 74%),hsl(234, 14%, 74%));
+}
+.wrapper:hover {
+    cursor: pointer;
+}
+.container-main {
+    width: 90%;
+    padding-bottom: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url(./images/bg-bottom.svg) bottom left no-repeat;
+}
+.card {
+    width: 32%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: white;
+}
+.card:nth-child(1),
+.card:nth-child(3) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.card:nth-child(2) {
+    color: white;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.plan p {
+    color: hsl(233, 13%, 49%);
+    font-size: 1.2em;
+}
+.price h1 {
+    font-size: 4em;
+    margin-top: -5%;
+    position: relative;
+}
+.price h1 .dollor {
+    font-size: 40px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+.features {
+    width: 80%;
+    text-align: center;
+    color: hsl(233, 13%, 49%);
+    margin-top: -10%;
+}
+.features p {
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+.features p:nth-child(1) {
+    padding-top: 20px;
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+.button {
+    width: 100%;
+    text-align: center;
+}
+.button button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.card:nth-child(2) .plan p,
+.card:nth-child(2) .features p{
+    color: white;  
+}
+.card:nth-child(2) .button button {
+    color: hsl(237, 63%, 64%);
+    background: linear-gradient(to right,white,white);
+}
+button:hover {
+    cursor: pointer;
+    background: transparent;
+    padding: 9px;
+    outline-color: transparent;
+    border: 1px solid hsl(237, 63%, 64%);
+    color: hsl(237, 63%, 64%);
+}
+.card:nth-child(2) button:hover {
+    cursor: pointer;
+    background: transparent;
+    padding: 9px;
+    color: white;
+    outline: 1px solid white;
+}
