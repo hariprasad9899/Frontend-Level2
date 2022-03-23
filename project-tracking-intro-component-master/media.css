@@ -1,0 +1,44 @@
+@media screen and (max-width:650px) {
+    .options-right {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    .show {
+        display: block;
+    }
+    .intro {
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .intro-right {
+        margin: auto;
+        width: 100%;
+        order: 1;
+    }
+    .intro-right img {
+        height: 100%;
+        width: 110%;
+        margin-left: 5%;
+    }
+    .intro-left {
+        width: 100%;
+        order: 2;
+        margin-top: 10px;
+    }
+    .content {
+        margin-left: 10%;
+        padding-bottom: 50px;
+    }
+    .preview {
+        margin-top: 30px;
+    }
+    .preview button {
+        width: 50%;
+    }
+    .content h1 {
+        font-size: 2.3em;
+    }
+}
