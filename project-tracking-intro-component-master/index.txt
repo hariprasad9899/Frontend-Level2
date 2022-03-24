@@ -40,3 +40,4 @@ chrome://flags/
 
 
 font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
