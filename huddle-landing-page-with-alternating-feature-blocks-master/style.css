@@ -1,3 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html,body,main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: url(./images/bg-hero-desktop.svg) center no-repeat;
+}
+.topper {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    display: flex;
+}
+.left-logo,
+.right-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.left-logo {
+    width: 70%;
+}
 
+.right-btn {
+    width: 30%;
+    justify-content: flex-end;
+}
+.right-btn button {
+    width: 170px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    background-color: white;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.151);
+    font-family: 'Poppins', sans-serif;
+}
+.landing-content {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: flex;
+}
+.about-left {
+    width: 50%;
+    height: 100%;
+}
+.right-img {
+    width: 50%;
+}
+.right-img img {
+    width: 100%;
+    height: 100%;
+}
+.about-left .content {
+    padding-top: 30px;
+    padding-right: 60px;
+}
+.about-left .content h1 {
+    font-size: 2.3em;
+    color: hsl(192, 100%, 9%);
+}
+.about-left .content p {
+    font-weight: 500;
+    color: hsl(192, 100%, 9%);
+}
+.about-left .content button {
+    width: 250px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    color: white;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(322, 100%, 66%);
+}
+
+.insights {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+.insights .card {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.137);
+}
+.card section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+    padding-right: 130px;
+    text-align: left;
+}
+.card section h2 {
+    color:  hsl(192, 100%, 9%);
+}
+.card section p {
+    color: hsl(208, 11%, 55%);
+    margin-top: -10px;
+}
+.card .img-box {
+    width: 40%;
+    height: 100%;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+}
+.footer-content {
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
+    background-color: hsl(192, 100%, 9%);
+}
+
+.rebuild {
+    position: absolute;
+    width: 50%;
+    padding-bottom: 30px;
+    margin: auto;
+    top: -5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.055);
+}
+.rebuild h2 {
+    font-size: 1.5em;
+    margin-top: 50px;
+}
+.rebuild button {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(322, 100%, 66%);
+    margin-top: 0px;
+}
+.footer-content .wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.wrapper svg {
+    margin-top: 120px;
+    width: 100%;
+}
+.wrapper .inner {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    gap: 20px;
+}
+.first {
+    width: 35%;
+}
+.first .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 35px;
+    color: hsl(193, 100%, 96%);
+}
+.first .data .img-holder {
+    align-self: flex-start;
+}
+.first .data .text-holder p {
+    margin-top: -5px;
+}
+.second {
+    width: 20%;
+}
+.second nav {
+    display: flex;
+    flex-direction: column;
+}
+.second nav a {
+    color: white;
+    text-decoration: none;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.second nav a:first-child {
+    margin-top: 0px;
+}
+.four {
+    width: 20%;
+}
+.four nav {
+    margin-top: 10px;
+}
+.four nav a {
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.four nav a:first-child {
+    margin-left: 0;
+    margin-top: 0;
+}
+.four nav a i {
+    color: white;
+}
+.copyright {
+    width: 100%;
+    text-align: right;
+    color: hsl(193, 100%, 96%);
+    font-size: 0.7em;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.four nav a:hover {
+    border: 1px solid hsl(322, 100%, 66%);
+}
+.four nav a:hover i {
+    color: hsl(322, 100%, 66%);
+}

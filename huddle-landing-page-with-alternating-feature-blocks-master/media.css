@@ -1,0 +1,66 @@
+@media screen and (max-width:700px) {
+    .left-logo img {
+        width: 150px;
+        height: 30px;
+    }
+    .right-btn button {
+        width: 100px;
+        padding: 5px;
+    }
+    .landing-content {
+        flex-direction: column;
+    }
+    .about-left,
+    .right-img {
+        width: 100%;
+    }
+    .about-left {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .about-left .content {
+        padding-right: 0px;
+    }
+    .about-left .content h1 {
+        font-size: 1.7em;
+    }
+    .right-img {
+        padding-top: 30px;
+    }
+    .insights .card {
+        flex-direction: column;
+
+    }
+    .card section {
+        width: 100%;
+        order: 2;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 20px;
+    }
+    .card .img-box {
+        width: 100%;
+        order: 1;
+    }
+    .inner {
+        flex-direction: column;
+    }
+    .first,
+    .second,
+    .four {
+        width: 100%;
+    }
+    .four,.copyright {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .rebuild {
+        width: 80%;
+    }
+    .rebuild button {
+        width: 80%;
+    }
+}
