@@ -80,7 +80,7 @@ html,body,main {
     width: 50%;
     color: hsl(243, 87%, 12%);
     text-align: left;
-    padding-right: 5%;
+    padding-right: 1%;
     padding-top: 100px;
 }
 .one-img img {
@@ -108,6 +108,7 @@ input[type="text"] {
     padding: 15px;
     font-family: 'Open Sans', sans-serif;
 }
+
 input[type="submit"] {
     width: 40%;
     border: none;
@@ -123,6 +124,7 @@ input[type="submit"]:hover {
     font-weight: 700;
     cursor: pointer;
 }
+
 .con-err-text {
     width: 100%;
     font-size: 0.8em;
@@ -132,6 +134,7 @@ input[type="submit"]:hover {
     margin-left: 0%;
     font-weight: 600;
     color: red;
+    font-size: 0.8em;
 }
 
 /* Special Curve Background */
@@ -170,6 +173,9 @@ input[type="submit"]:hover {
 .three-content  {
     width: 60%;
     text-align: left;
+}
+.three-text-two {
+    font-weight: 600;
 }
 .three-text-one h1 {
     font-size: 2.5em;
@@ -231,3 +237,149 @@ input[type="submit"]:hover {
 .position {
     font-size: 0.8em;
 }
+
+/* Part Four */
+
+.part-four {
+    width: 100%;
+    background-color: hsl(238, 22%, 44%);
+}
+.content {
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.access {
+    width: 50%;
+    padding: 40px 100px 40px 0px;
+}
+.mail-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 60px 20px 40px 0px;
+}
+
+.mail-section input[type="text"] {
+    width:80%;
+    border-radius: 3px;
+}
+.mail-section p {
+    margin-top: -5px;
+    font-size: 0.8em;
+}
+.mail-section input[type="submit"] {
+    width: 50%;
+    padding: 13px;
+    margin-top: -20px;
+    border-radius: 3px;
+}
+
+/* Part Six */
+
+.part-six {
+    width: 100%;
+    background-color: hsl(243, 87%, 12%);
+}
+.inner {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 50px 0px;
+    background-color: hsl(243, 87%, 12%);
+
+}
+.logo {
+    width: 100%;
+    padding: 50px 0px 20px 0px;
+}
+.footer-content {
+    width: 100%;
+    margin-top: -70px;
+    display: flex;
+    justify-content: space-between;
+}
+.f-box {
+    padding: 15px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.f-box:nth-child(1) {
+    width: 25%;
+}
+.f-box:nth-child(2) {
+    width: 25%;
+}
+.f-box:nth-child(3) {
+    width: 15%;
+}
+.f-box:nth-child(4) {
+    width: 15%;
+}
+.f-box:nth-child(5) {
+    width: 15%;
+}
+.loc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.loc img {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+.phone, .mail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.phone img, .mail img {
+    width: 25px;
+    height: 25px;
+}
+.f-box:nth-child(2) nav,
+.f-box:nth-child(3) nav {
+    display: flex;
+    flex-direction: column;
+}
+.f-box:nth-child(2) nav a,
+.f-box:nth-child(3) nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 0px 10px 0px;
+}
+.f-box:nth-child(2) nav a:hover,
+.f-box:nth-child(3) nav a:hover {
+    color: hsl(238, 22%, 44%);
+    font-weight: 700;
+}
+.f-box:nth-child(4) nav {
+    display: flex;
+    justify-content: flex-end;
+}
+.f-box:nth-child(4) nav a {
+    padding: 8px;
+    border-radius: 60%;
+    border: 1px solid white;
+    margin: 0px 6px 0px 6px;
+}
+.f-box:nth-child(4) nav a:last-child {
+    margin-right: -12px;
+}
+.f-box:nth-child(4) nav a i {
+    color: white;
+}
+.f-box:nth-child(4) nav a:hover i{
+    color: hsl(176, 68%, 64%);
+}
+.f-box:nth-child(4) nav a:hover {
+    border: 1px solid hsl(176, 68%, 64%);
+}
+
+
+
