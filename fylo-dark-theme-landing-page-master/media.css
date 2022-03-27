@@ -1,0 +1,108 @@
+@media screen and (max-width:700px) {
+    .fylo-logo img {
+        width: 100%;
+    }
+    .navigation nav a {
+        margin: 5px 5px;
+    }
+    .navigation nav a:nth-child(2):hover{
+        margin-left: 4px;
+    }
+    .navigation nav a:nth-child(3):hover {
+        margin-left: 3px;
+    }
+    .part-one {
+        background:hsl(217, 28%, 15%)  url(./images/bg-curvy-mobile.svg) bottom center no-repeat;
+        background-size: contain;
+    }
+    .part-one .content-one {
+        width: 100%;
+    }
+    .two-text {
+        padding:0px 20px 0px 20px;
+    }
+    .three-text {
+        padding: 0px 20px 0px 20px;
+    }
+    .two-text h1 {
+        font-size: 1.5em;
+    }
+    .content-two {
+        width: 100%;
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+    }
+    .part-three {
+        flex-direction: column;
+    }
+    .three-imgbox,
+    .three-content {
+        width: 100%;
+    }
+    .three-content  {
+        padding: 10px 10px 0px 20px;
+    }
+    .three-text-one {
+        padding-right: 10px;
+    }
+    .three-content h1 {
+        font-size: 2.2em;
+    }
+    .wrapper-box {
+        flex-direction: column;
+        align-items: center;
+        background:  url(./images/bg-quotes.png) top left no-repeat;
+    }
+    .testimonal {
+        width: 90%;
+    }
+    .about-user {
+        margin-left: -70px;
+    }
+    .part-five .card {
+        width: 90%;
+    }
+    .con-text-two {
+        padding: 0px 20px 0px 20px;
+    }
+    .button-set {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    input[type="submit"] , 
+    input[type="text"] {
+        width: 300px;
+        padding: 15px;
+    }
+    .con-err-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .con-err-text p {
+        margin-left: 0%;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .f-box:nth-child(1),
+    .f-box:nth-child(2),
+    .f-box:nth-child(3),
+    .f-box:nth-child(4),
+    .f-box:nth-child(5) {
+        width: 100%;
+    }
+    .f-box:nth-child(5) nav {
+        justify-content: flex-start;
+    }
+    .f-box:nth-child(5) nav a:first-child {
+        margin-left: 0px;
+    }
+    
+.part-six {
+    padding: 220px 0px 50px 0px;
+}
+}
