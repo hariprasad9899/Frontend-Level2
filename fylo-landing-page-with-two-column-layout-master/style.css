@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html,body,main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Top menu bar  */
+
+.menu-bar {
+    width: 100%;
+    background-color: white;
+}
+.menu {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: auto;
+    display: flex;
+}
+.fylo-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.navigation nav a {
+    text-decoration: none;
+    color: hsl(238, 22%, 44%);
+    margin: 20px 20px;
+}
+.navigation nav a:last-child {
+    margin-right: 0px;
+}
+.navigation nav a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+.navigation nav a:nth-child(2):hover{
+    margin-left: 20px;
+}
+.navigation nav a:nth-child(3):hover {
+    margin-left: 20px;
+}
+
+/* Part one */
+
+.part-one {
+    width: 100%;
+    color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.part-one .content-one {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.one-img {
+    width: 50%;
+    order: 2;
+}
+.text-wrapper {
+    order: 1;
+    width: 50%;
+    color: hsl(243, 87%, 12%);
+    text-align: left;
+    padding-right: 5%;
+    padding-top: 100px;
+}
+.one-img img {
+    width: 100%;
+    height: 100%;
+}
+.two-text h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.2em;
+    font-weight: 700;
+}
+.three-text p{
+    font-size: 1.1em;
+}
+.button-set {
+    display: flex; 
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+input[type="text"] {
+    width: 60%;
+    border: none;
+    outline: 1px solid black;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="submit"] {
+    width: 40%;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+input[type="submit"]:hover {
+    opacity: 0.8;
+    font-weight: 700;
+    cursor: pointer;
+}
+.con-err-text {
+    width: 100%;
+    font-size: 0.8em;
+    text-align: left;
+}
+.con-err-text p {
+    margin-left: 0%;
+    font-weight: 600;
+    color: red;
+}
+
+/* Special Curve Background */
+
+.spl-curve-bg {
+    width: 100%;
+    padding: 50px;
+    margin-top: 70px;
+    background: url(./images/bg-curve-desktop.svg) top no-repeat;
+}
+
+
+/* Part Three */
+
+.part-three {
+    width: 100%;
+    color: hsl(218, 28%, 13%);
+    background-color: hsl(240, 75%, 98%);
+}
+.wrap-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+.three-imgbox {
+    width: 40%;
+    display: grid;
+    order: 2;
+}
+.three-imgbox img {
+    width: 100%;
+    margin: auto;
+}
+.three-content  {
+    width: 60%;
+    text-align: left;
+}
+.three-text-one h1 {
+    font-size: 2.5em;
+}
+.three-text-two {
+    padding-right: 50px;
+}
+.three-text-two p {
+    font-weight: 500;
+}
+.three-text-link {
+    display: flex;
+    gap: 5px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.three-text-link a{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(198, 60%, 50%);
+    font-weight: 500;
+    text-underline-offset: 3px;
+}
+.three-text-link a:hover {
+    font-weight: 700;
+    color: hsl(170, 45%, 43%);
+}
+.testimonal {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px 30px 20px 20px;
+    color: hsl(243, 87%, 12%);
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 4px 20px 0px rgba(85, 84, 84, 0.514);
+}
+.test-text p {
+    font-size: 1em;
+}
+.user {
+    display: flex;
+    align-items: center;
+}
+.wrap-img img {
+    width: 40%;
+    border-radius: 50%;
+}
+.about-user {
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+}
+.about-user p:nth-child(2) {
+    margin-top: -10px;
+}
+.name {
+    font-weight: 600;
+}
+.position {
+    font-size: 0.8em;
+}

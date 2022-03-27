@@ -1,0 +1,74 @@
+@media screen and (max-width:700px) {
+    .fylo-logo img {
+        width: 100%;
+    }
+    .navigation nav a {
+        margin: 5px 5px;
+        font-size: 0.8em;
+    }
+    .navigation nav a:nth-child(2):hover{
+        margin-left: 4px;
+    }
+    .navigation nav a:nth-child(3):hover {
+        margin-left: 3px;
+    }
+    .part-one .content-one {
+        width: 100%;
+        flex-direction: column;
+    }
+    .two-text h1 {
+        font-size: 1.5em;
+    }
+    .one-img {
+        order: 1;
+        width: 90%;
+    }
+    .content-two {
+        width: 100%;
+        flex-direction: column;
+    }
+    .text-wrapper {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .button-set {
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="submit"] , 
+    input[type="text"] {
+        width: 80%;
+        padding: 15px;
+    }
+    .wrap-content {
+        width: 90%;
+        flex-direction: column;
+    }
+    .three-imgbox,
+    .three-content {
+        width: 100%;
+    }
+    .three-imgbox {
+        order: 1;
+    }
+    .three-content {
+        order: 2;
+    }
+    .three-text-one h1 {
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .three-text-link {
+        justify-content: center;
+    }
+    .testimonal {
+        width: 90%;
+        margin: auto;
+    }
+    .spl-curve-bg {
+        margin-top: 10px;
+        background: url(./images/bg-curve-mobile.svg) top no-repeat;
+        background-size: 100% 100%;
+    }
+}

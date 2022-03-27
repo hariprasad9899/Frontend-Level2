@@ -2,72 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
 </head>
-<body>
+<body id="body-color">
+    <main>
+        <!-- Top Menu Bar -->
+        <div class="menu-bar">
+          <div class="menu">
+              <div class="fylo-logo">
+                  <img src="./images/logo.svg" alt="">
+              </div>
+              <div class="navigation">
+                  <nav>
+                      <a href="#">Features</a>
+                      <a href="#">Team</a>
+                      <a href="#">Sign In</a>
+                  </nav>
+              </div>
+          </div>
+        </div>
 
-  Features
-  Team
-  Sign In
 
-  All your files in one secure location, accessible anywhere.
+        <!-- Part one -->
+        <div class="part-one">
+          <div class="content-one">
+              <div class="one-img">
+                  <img src="./images/illustration-1.svg" alt="">
+              </div>
+              <div class="text-wrapper">
+                  <div class="two-text">
+                    <h1>
+                        All your files in one secure location, accessible anywhere.
+                    </h1>
+                  </div>
+                  <div class="three-text">
+                      <p>
+                          Fylo stores all your most important files in one secure location. Access them wherever 
+                          you need, share and collaborate with friends family, and co-workers.
+                      </p>
+                  </div>
+                  <div class="button-set">
+                      <input id="input" type="text" placeholder="Enter your mail">
+                      <input id="btn" type="submit" value="Get Started For Free">
+                  </div>
+                  <div class="con-err-text">
+                      <p class="err" id="error" style="opacity: 0;">
+                          Please enter a valid email address
+                      </p>
+                  </div>
+              </div>
+          </div>
+        </div>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+        <div class="spl-curve-bg"></div>
 
-  Get Started
-
-  Stay productive, wherever you are
-
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
-
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
-
-  See how Fylo works
-
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
-
-  Kyle Burton
-  Founder & CEO, Huddle
-
-  Get early access today
-
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
-
-  Get Started For Free
-
-  Phone: +1-543-123-4567
-  example@fylo.com
-
-  About Us
-  Jobs
-  Press
-  Blog
-
-  Contact Us
-  Terms
-  Privacy
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+        <!-- Part three -->
+        <div class="part-three">
+          <div class="wrap-content">
+                <div class="three-imgbox">
+                  <img src="./images/illustration-2.svg" alt="">
+                </div>
+                <div class="three-content">
+                  <div class="three-text-one">
+                      <h1>
+                          Stay productive, wherever you are
+                      </h1>
+                  </div>
+                  <div class="three-text-two">
+                      <p>
+                          Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+                          storage needs.
+                      </p>
+                      <p>
+                          Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+                          attachments required.
+                      </p>
+                  </div>
+                  <div class="three-text-link">
+                      <a href="#">See how Fylo works</a>
+                      <a href="#"><img src="./images/icon-arrow.svg" alt=""></a>
+                  </div>
+                  <div class="testimonal">
+                    <img src="./images/icon-quotes.svg" alt="">
+                    <div class="test-text">
+                        <p>
+                            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
+                            become a well-oiled collaboration machine.
+                        </p>
+                    </div>
+                    <div class="user">
+                        <div class="wrap-img">
+                            <img src="./images/avatar-testimonial.jpg" alt="">
+                        </div>
+                        <div class="about-user">
+                            <p class="name">Kyle Burton</p>
+                            <p class="position">Founder & CEO, Huddle</p>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
 </body>
 </html>
