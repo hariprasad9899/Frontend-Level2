@@ -77,7 +77,7 @@ html,body,main{
     align-items: center;
 }
 .content-one .one-img img {
-    width: 100%;
+    width: 80%;
 }
 .two-text {
     padding: 0 5% 0 5%;
@@ -256,7 +256,7 @@ html,body,main{
 .part-five .card {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-90%);
+    transform: translate(-50%,-70%);
     width: 70%;
     position: absolute;
     text-align: center;
@@ -321,14 +321,20 @@ input[type="submit"]:hover {
 
 .part-six {
     width: 100%;
+    background-color: hsl(216, 53%, 9%);
+}
+.inner {
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 150px 0px 50px 0px;
     background-color: hsl(216, 53%, 9%);
+
 }
 .logo {
     width: 100%;
-    padding: 20px 0px 20px 0px;
+    padding: 50px 0px 20px 0px;
 }
 .footer-content {
     width: 100%;

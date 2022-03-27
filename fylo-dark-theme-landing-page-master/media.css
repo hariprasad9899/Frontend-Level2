@@ -101,8 +101,8 @@
     .f-box:nth-child(5) nav a:first-child {
         margin-left: 0px;
     }
-    
-.part-six {
-    padding: 220px 0px 50px 0px;
-}
+
+    .part-six {
+    padding: 120px 0px 50px 0px;
+    }
 }
