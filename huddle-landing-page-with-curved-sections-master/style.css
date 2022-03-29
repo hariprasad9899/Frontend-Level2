@@ -15,7 +15,7 @@ html,body,main {
 }
 .topper {
     width: 90%;
-    padding-top: 20px;
+    padding-top: 50px;
     padding-bottom: 20px;
     margin: auto;
     display: flex;
@@ -34,6 +34,7 @@ html,body,main {
     width: 30%;
     justify-content: flex-end;
 }
+
 .right-btn button {
     width: 170px;
     border: none;
@@ -47,10 +48,15 @@ html,body,main {
     box-shadow: 0px 2px 2px 2px hsla(322, 100%, 66%, 0.116);
     font-family: 'Poppins', sans-serif;
 }
+.right-btn button:hover {
+    cursor: pointer;
+    border: 2px solid hsl(321, 100%, 78%);
+    box-shadow: 0px 4px 4px 4px hsla(322, 100%, 66%, 0.116)
+}
 
 .landing-content {
     width: 90%;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 30px;
     margin: auto;
     display: flex;
@@ -96,6 +102,10 @@ html,body,main {
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
     background-color: hsl(322, 100%, 66%);
+}
+.content button:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .part-two {
@@ -237,12 +247,17 @@ html,body,main {
     font-family: 'Open Sans', sans-serif;
     background-color: hsl(322, 100%, 66%);
 }
+.wrap-con button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 .part-five {
     width: 100%;
     margin-top: 20%;
     position: relative;
     padding-bottom: 100px;
+    padding-top: 40px;
     background-color: hsl(192, 100%, 9%);
 }
 .footer-wrap {
@@ -289,6 +304,9 @@ nav a i {
 nav a:first-child {
     margin-left: 0px;
 }
+nav a i:hover {
+    color: aqua;
+}
 .footer-part-two {
     display: flex;
     flex-direction: column;
@@ -323,11 +341,11 @@ input[type="submit"] {
 input:hover {
     cursor: pointer;
 }
-.error {
-    background-color: lightblue;
-}
+input[type="submit"]:hover {
+    background-color: hsl(321, 100%, 78%);
+}   
 .error p {
-    color: red;
+    color: hsl(0, 100%, 63%);
     font-size: 0.8em;
     font-weight: 600;
 }
