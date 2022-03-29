@@ -9,7 +9,7 @@ btn.onclick = function() {
         input.style.outline = "none";
     } else {
         error.style.opacity = "1";
-        input.style.outline = "1px solid red";
+        input.style.outline = "2px solid red";
     }
 }
 

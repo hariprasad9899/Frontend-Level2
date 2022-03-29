@@ -84,6 +84,7 @@ html,body,main {
 }
 .about-left .content h1 {
     font-size: 2.3em;
+    font-weight: 700;
     color: hsl(192, 100%, 9%);
 }
 .about-left .content p {
@@ -93,7 +94,7 @@ html,body,main {
     padding-right: 28%;
 }
 .about-left .content button {
-    width: 250px;
+    width: 270px;
     padding: 13px;
     border: none;
     outline: none;
@@ -101,7 +102,7 @@ html,body,main {
     margin-top: 20px;
     border-radius: 30px;
     font-family: 'Poppins', sans-serif;
-    background-color: hsl(322, 100%, 66%);
+    background-color: hsl(322, 100%, 65%);
 }
 .content button:hover {
     cursor: pointer;
@@ -113,15 +114,18 @@ html,body,main {
     padding-bottom: 70px;
 }
 .wrapper {
-    width: 70%;
+    width: 90%;
     margin: auto;
     display: flex;
-    gap: 30%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
 }
 .left-val ,
 .right-val {
     width: 50%;
 }
+
 .val {
     display: flex;
     flex-direction: column;
@@ -129,14 +133,16 @@ html,body,main {
     justify-content: center;
 }
 .val p {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: -40px;
 }
 .val h1 {
     font-size: 4em;
     margin-top: 5px;
 }
-
+.val img {
+    margin-left: -20%;
+}
 .insights {
     width: 100%;   
 }
@@ -161,13 +167,15 @@ html,body,main {
     padding-left: 80px;
     padding-right: 160px;
     text-align: left;
+    color: hsl(192, 100%, 9%);
 }
 .card section h2 {
-    color:  hsl(192, 100%, 9%);
+    font-weight: 700;
+    font-size: 2.2em;
 }
 .card section p {
-    color: hsl(208, 11%, 55%);
     margin-top: -10px;
+    font-weight: 500;
 }
 .card .img-box {
     width: 40%;
@@ -235,10 +243,11 @@ html,body,main {
 }
 .wrap-con h1 {
     font-weight: 700;
+    font-size: 2.5em;
 }
 .wrap-con button {
     width: 40%;
-    padding: 18px;
+    padding: 22px;
     border: none;
     outline: none;
     border-radius: 30px;
@@ -310,6 +319,9 @@ nav a i:hover {
 .footer-part-two {
     display: flex;
     flex-direction: column;
+}
+.news {
+    font-size: 1.3em;
 }
 .tips {
     padding-right: 100px;
