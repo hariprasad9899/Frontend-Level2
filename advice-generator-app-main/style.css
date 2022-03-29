@@ -57,8 +57,7 @@ html,body,main {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: url(./images/pattern-divider-mobile.svg) center no-repeat;
-    background-color: hsl(217, 19%, 38%);
+    background: hsl(217, 19%, 38%) url(./images/pattern-divider-desktop.svg) center no-repeat;
 }
 
 .dice {
@@ -98,5 +97,8 @@ html,body,main {
     .advice-text {
         font-size: 1.1em;
         font-weight: 800;
+    }
+    .line span {
+        background: hsl(217, 19%, 38%) url(./images/pattern-divider-mobile.svg) center no-repeat;
     }
 }
