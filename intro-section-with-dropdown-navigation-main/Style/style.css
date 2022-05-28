@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,700&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+html,body,main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.stop-scrolling {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+main {
+    position: relative;
+}
+.partOne {
+    width: 100%;
+    padding: 15px 0px 10px 0px ;
+    display: flex;
+}
+.ham {
+    display: none;
+}
+.cLogo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cLogo img {
+    margin-left: 10px;
+}
+.menus {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sign {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.options {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.options p {
+    color: hsl(0, 0%, 41%);
+    font-size: 0.9em;
+}
+.options .one,
+.options .two  {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.three, .four {
+    display: flex;
+    align-items: center;
+}
+.sign button {
+    border: none;
+    outline: none;
+    width: 100px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid black;
+    background: transparent;
+}
+.sign button:hover {
+    cursor: pointer;
+    font-weight: 600;
+    border: 2px solid black;
+}
+.sign button:nth-child(2) {
+    margin-right: 10px;
+}
+.options p:hover {
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+.dropMenuOne {
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.294);
+}
+.dropMenuOne .ops {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -10px;
+}
+.ops p {
+    color: hsl(0, 0%, 41%);
+    text-align: right;
+}
+.dropMenuTwo {
+    min-width: 120px;
+    position: absolute;
+    top: 100%;
+    padding:0px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.294);
+}
+.dropMenuTwo p {
+    color: hsl(0, 0%, 41%);
+    display: none;
+}
+.dropMenuOne.active {
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+.dropMenuOne.active .ops {
+    display: flex;
+}
+.dropMenuTwo.active {
+    padding: 10px 20px 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+.dropMenuTwo.active p {
+    display: block;
+}
+.arrow {
+    transition: 0.3s ease-in-out;
+}
+.arrow.invert {
+    transition: 0.3s ease-in-out;
+    transform: rotate(180deg);
+}
+.overlay {
+    display: none;
+}
+.mobMenu {
+    display: none;
+}
+.dropMenuOne,
+.dropMenuTwo {
+    background-color: white;
+}
+/* Part Two */
+
+.partTwo {
+    width: 100%;
+    padding-top: 50px;
+}
+.innerTwo {
+    width: 85%;
+    margin: auto;
+    margin-left: 10%;
+    display: flex;
+}
+.imgSec {
+    width: 45%;
+    background: url(../images/image-hero-desktop.png) center no-repeat;
+    background-size:100% 100%;
+}
+.contentSec {
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+.wrapperCon {
+    width: 100%;
+}
+.wrapperCon h1 {
+    font-size: 4.5em;
+    padding-right: 15%;
+}
+.wrapperCon p {
+    padding-right: 30%;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.4;
+}
+.wrapperCon button {
+    width: 120px;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+    border-radius: 8px;
+    font-family: 'Epilogue', sans-serif;
+}
+.wrapperCon button:hover {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    color:black;
+}
+.others {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-start;
+}

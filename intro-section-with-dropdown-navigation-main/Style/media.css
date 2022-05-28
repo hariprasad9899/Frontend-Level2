@@ -1,0 +1,214 @@
+@media screen and (max-width:768px) {
+    .options {
+        gap: 10px;
+    }
+    .sign {
+        width: 30%;
+    }
+    .menus {
+        width: 50%;
+    }
+    .cLogo {
+        width: 20%;
+    }
+    .options p {
+        font-size: 0.8em;
+    }
+    .options .one,
+    .options .two {
+        gap: 5px;
+    }
+    .innerTwo {
+        width: 90%;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .sign {
+        display: none;
+    }
+    .menus {
+        display: none;
+    }
+    .cLogo {
+        width: 50%;
+        justify-content: flex-start;
+    }
+    .cLogo img {
+        margin-left: 10px;
+    }
+    .ham {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction:column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 3px;
+    }
+    .ham span {
+        width: 35px;
+        height: 4px;
+        margin-right:10px ;
+        background-color: black;
+        transition: 0.3s ease-in-out;
+    }
+    .ham span:hover {
+        cursor: pointer;
+    }
+    .ham span.one {
+        width: 30px;
+        transition: 0.3s ease-in-out;
+        transform: rotate(45deg) translate(4px,6px);
+    }
+    .ham span.two {
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .ham span.three {
+        width: 30px;
+        transition: 0.3s ease-in-out;
+        transform: rotate(-45deg) translate(4px,-5px);
+    }
+    .overlay {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.32);
+    }
+    .overlay.active {
+        display: block;
+    }
+    .mobMenu {
+        position: absolute;
+        display: block;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        right: -60%;
+        transition: 0.4s ease-in-out;
+        background-color: #eee;
+    }
+    .mobMenu.cl {
+        right: 0%;
+        transition: 0.4s ease-in-out;
+    }
+    .close {
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .close img {
+        margin-right: 10px;
+    }
+    .close img:hover {
+        cursor: pointer;
+        user-select: none;
+    }
+    .contentWrap {
+        display: flex;
+        padding-left: 20px;
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .featureMob {
+        width: 100%;
+    }
+    .mn {
+        display: flex;
+        gap: 10px;
+        margin-top: -10px;
+    }
+    .mn p:hover {
+        cursor: pointer;
+        user-select: none;
+        font-weight: 600;
+    }
+    .drop {
+        display: none;
+        padding-left: 10px;
+    }
+    .drop .ops {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .drop p:hover {
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .df.active {
+        display: block;
+    }
+    .dc.active {
+        display: block;
+    }
+    .btnSet {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btnSet button {
+        width: 90%;
+        padding: 10px;
+        background: transparent;
+        font-size: 1em;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .btnSet button:hover {
+        cursor: pointer;
+        font-weight: 600;
+        border: 2px solid black;
+        padding: 9px;
+    }
+    .innerTwo {
+        flex-direction: column;
+        gap: 60px;
+        width: 90%;
+        margin-left: 0;
+        margin: auto;
+    }
+    .imgSec,
+    .contentSec {
+        width: 100%;
+    }
+    .contentSec {
+        order: 1;
+    }
+    .imgSec {
+        height: 300px;
+        background: url(../images/image-hero-mobile.png) center no-repeat;
+        background-size: 100% 100%;
+    }
+    .wrapperCon {
+        text-align: center;
+        padding: 5px;
+    }
+    .wrapperCon h1 {
+        font-size: 2em;
+        padding-right: 0;
+    }
+    .wrapperCon p {
+        padding-right: 0%;
+        font-size: 0.9em;
+        
+    }
+    .others {
+        gap: 10px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    .others img {
+        width: 60px;
+    }
+}
