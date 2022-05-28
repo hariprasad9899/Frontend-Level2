@@ -161,6 +161,7 @@ main {
 .partTwo {
     width: 100%;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 .innerTwo {
     width: 85%;
