@@ -1,0 +1,14 @@
+@media screen and (max-width:500px) {
+    .bars span {
+        width: 50px;
+        padding: 5px;
+        left: -15%;
+        font-size: 0.7em;
+    }
+    .bars {
+        width: 30px;
+    }
+    .bars p {
+        left: 0px;
+    }
+}
